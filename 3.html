@@ -6,177 +6,151 @@
     <title>جزوه ایمنی شناسی بالینی – جلسه سوم (دکتر محمدی)</title>
     <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet" type="text/css" />
     <style>
-body {
-    font-family: 'Vazirmatn', Arial, sans-serif;
-    line-height: 1.9;
-    margin: 0;
-    padding: 0;
-    background-color: #f8f9fa;
-    color: #343a40;
-    direction: rtl;
-}
+        body {
+            font-family: 'Vazirmatn', Arial, sans-serif;
+            line-height: 1.9;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #343a40;
+            direction: rtl;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 30px auto;
+            background-color: #ffffff;
+            padding: 30px 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+        }
+        h1 {
+            text-align: center;
+            color: #0056b3;
+            border-bottom: 3px solid #0056b3;
+            padding-bottom: 20px;
+            margin-bottom: 35px;
+            font-size: 2.3em;
+            font-weight: 700;
+        }
+        h2 {
+            color: #007bff;
+            border-bottom: 2px solid #e0e7ff;
+            padding-bottom: 15px;
+            margin-top: 45px;
+            margin-bottom: 25px;
+            font-size: 1.9em;
+            font-weight: 600;
+        }
+        h3 {
+            color: #17a2b8;
+            margin-top: 35px;
+            margin-bottom: 20px;
+            font-size: 1.6em;
+            font-weight: 500;
+        }
+        ul, ol {
+            padding-right: 25px;
+        }
+        li {
+            margin-bottom: 18px;
+            line-height: 1.85;
+        }
+        p {
+            margin-bottom: 18px;
+            text-align: justify;
+            line-height: 1.95;
+        }
+        strong {
+            color: #ff0000; /* Red color for emphasis */
+            font-weight: 600;
+        }
+        .note, .task {
+            background-color: #e9f7fd;
+            border-right: 7px solid #1e88e5;
+            padding: 20px 25px;
+            margin-top: 25px;
+            margin-bottom: 25px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.07);
+        }
+        .note strong, .task strong {
+            color: #1565c0; /* Deeper blue for strong text within notes/tasks */
+        }
+        .task ol {
+            margin-top: 10px;
+        }
+        .sub-bullet {
+            list-style-type: disc;
+            margin-right: 30px;
+            margin-top: 10px;
+        }
+        .sub-bullet li {
+            margin-bottom: 12px;
+        }
+        hr {
+            border: 0;
+            height: 1px;
+            background-color: #cfd8dc;
+            margin: 45px 0;
+        }
+        .final-salutation {
+            text-align: center;
+            font-style: italic;
+            color: #546e7a;
+            margin-top: 35px;
+            font-size: 1.1em;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        th, td {
+            border: 1px solid #b0bec5;
+            padding: 12px 15px;
+            text-align: right;
+            line-height: 1.7;
+        }
+        th {
+            background-color: #eceff1;
+            color: #37474f;
+            font-weight: 600;
+        }
+        tr:nth-child(even) {
+            background-color: #f8f9fa;
+        }
+        caption {
+            caption-side: bottom;
+            font-size: 0.9em;
+            color: #78909c;
+            margin-top: 10px;
+        }
+        .diagram-description {
+            background-color: #fafafa;
+            border: 1px dashed #ced4da;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 8px;
+            font-style: italic;
+            color: #495057;
+        }
+                .nav-button {
+            padding: 10px 20px;
+            font-size: 1em;
+            margin: 10px;
+            border: none;
+            border-radius: 8px;
+            background-color: #007bff;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
 
-.container {
-    max-width: 1000px;
-    margin: 30px auto;
-    background-color: #ffffff;
-    padding: 30px 40px;
-    border-radius: 12px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-}
-
-h1 {
-    text-align: center;
-    color: #0056b3;
-    border-bottom: 3px solid #0056b3;
-    padding-bottom: 20px;
-    margin-bottom: 35px;
-    font-size: 2.3em;
-    font-weight: 700;
-}
-
-h2 {
-    color: #007bff;
-    border-bottom: 2px solid #e0e7ff;
-    padding-bottom: 15px;
-    margin-top: 45px;
-    margin-bottom: 25px;
-    font-size: 1.9em;
-    font-weight: 600;
-}
-
-h3 {
-    color: #17a2b8;
-    margin-top: 35px;
-    margin-bottom: 20px;
-    font-size: 1.6em;
-    font-weight: 500;
-}
-
-ul, ol {
-    padding-right: 25px;
-}
-
-li {
-    margin-bottom: 18px;
-    line-height: 1.85;
-}
-
-p {
-    margin-bottom: 18px;
-    text-align: justify;
-    line-height: 1.95;
-}
-
-strong {
-    color: #d32f2f; /* رنگ قرمز ملایم برای تأکید */
-    font-weight: 600;
-}
-
-.note, .task {
-    background-color: #e9f7fd;
-    border-right: 7px solid #1e88e5;
-    padding: 20px 25px;
-    margin-top: 25px;
-    margin-bottom: 25px;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.07);
-}
-
-.note strong, .task strong {
-    color: #1565c0; /* آبی تیره برای متن تأکیدی داخل نوت */
-}
-
-.task ol {
-    margin-top: 10px;
-}
-
-.sub-bullet {
-    list-style-type: disc;
-    margin-right: 30px;
-    margin-top: 10px;
-}
-
-.sub-bullet li {
-    margin-bottom: 12px;
-}
-
-hr {
-    border: 0;
-    height: 1px;
-    background-color: #cfd8dc;
-    margin: 45px 0;
-}
-
-.final-salutation {
-    text-align: center;
-    font-style: italic;
-    color: #546e7a;
-    margin-top: 35px;
-    font-size: 1.1em;
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 20px 0;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    font-size: 0.95em;
-}
-
-th, td {
-    border: 1px solid #b0bec5;
-    padding: 12px 15px;
-    text-align: center;
-    vertical-align: middle;
-    line-height: 1.7;
-}
-
-th {
-    background-color: #eceff1;
-    color: #37474f;
-    font-weight: 600;
-}
-
-tr:nth-child(even) {
-    background-color: #f1f3f5;
-}
-
-caption {
-    caption-side: bottom;
-    font-size: 0.9em;
-    color: #78909c;
-    margin-top: 10px;
-    padding: 5px;
-}
-
-.diagram-description {
-    background-color: #fafafa;
-    border: 1px dashed #ced4da;
-    padding: 15px;
-    margin: 20px 0;
-    border-radius: 8px;
-    font-style: italic;
-    color: #495057;
-}
-
-.nav-button {
-    padding: 10px 20px;
-    font-size: 1em;
-    margin: 10px 5px;
-    border: none;
-    border-radius: 8px;
-    background-color: #007bff;
-    color: white;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-.nav-button:hover {
-    background-color: #0056b3;
-    transform: translateY(-2px);
-}
-
+        .nav-button:hover {
+            background-color: #0056b3;
+        }
     </style>
 </head>
 <body>
