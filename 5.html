@@ -104,38 +104,62 @@
             margin-top: 35px;
             font-size: 1.1em;
         }
+        .table-container {
+            max-width: 100%;
+            overflow-x: auto;
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
         table {
-            width: 100%;
             border-collapse: collapse;
-            margin-top: 25px;
-            margin-bottom: 25px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            font-size: 0.9em; /* Slightly smaller for dense tables */
-            table-layout: auto; /* Allow table to adjust column widths */
+            width: max-content;
+            min-width: 1000px;
         }
-        th, td {
-            border: 1px solid #b0bec5;
-            padding: 8px 10px; /* Adjusted padding for tables */
-            text-align: right;
-            line-height: 1.6;
-            word-wrap: break-word; /* Help prevent overflow in table cells */
-        }
-        th {
-            background-color: #e8f0fe; /* Lighter blue for table headers */
-            color: #0056b3; /* Header text color */
-            font-weight: 600;
-            white-space: nowrap; /* Prevent header text from wrapping if possible */
-        }
-        tr:nth-child(even) {
-            background-color: #f8f9fa;
-        }
+
         caption {
             caption-side: top;
-            font-size: 1.1em;
+            text-align: center;
             font-weight: bold;
-            color: #007bff;
-            margin-bottom: 10px;
-            margin-top: 15px;
+            font-size: 1.1em;
+            margin-bottom: 15px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px 12px;
+            text-align: center;
+            white-space: nowrap;
+        }
+
+        thead th {
+            background-color: #007bff;
+            color: white;
+            font-size: 0.9em;
+            position: sticky;
+            top: 0;
+            z-index: 1;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        tbody tr:hover {
+            background-color: #e6f0ff;
+        }
+
+        td[colspan] {
+            background-color: #ffeeba;
+        }
+
+        @media screen and (max-width: 768px) {
+            table {
+                font-size: 12px;
+            }
         }
                 .nav-button {
             padding: 10px 20px;
@@ -166,28 +190,29 @@
             <li>بر خلاف برنامه ایران، واکسن‌های آبله‌مرغان (Varicella Zoster)، گارداسیل (HPV، حداکثر تا سن ۲۶ سالگی) و آنفولانزا (به‌صورت سالانه) در برنامه آمریکا وجود دارد.</li>
             <li><strong>واکسن پنوموکوک:</strong> قبلاً در برنامه ایران وجود نداشت و تنها در برنامه آمریکا بود، اما اخیراً به برنامه ایران اضافه شده است. این واکسن تا چندی پیش در ایران فقط برای گروه‌های خاصی استفاده می‌شد (مانند سالمندان بالای ۶۰ سال – در کتاب افراد بالای ۵۵ سال سالمند محسوب می‌شوند، افراد با کم‌خونی داسی‌شکل که دچار اتواسپلنکتومی یا از کار افتادن طحال می‌شوند، و افرادی که در مناطق خاصی مانند جیرفت، بم، کهنوج کار می‌کنند). طحال نقش مهمی در فیلتر کردن باکتری‌ها، خصوصاً باکتری‌های کپسول‌دار دارد.</li>
         </ul>
+        <div class="table-container">
         <table>
-            <caption>جدول برنامه واکسیناسیون توصیه شده برای سنین ۰ تا ۱۸ سال در آمریکا (۲۰۲۳) - برگرفته از جزوه</caption>
+            <caption>جدول برنامه واکسیناسیون توصیه‌شده برای سنین ۰ تا ۱۸ سال در آمریکا (۲۰۲۳)</caption>
             <thead>
                 <tr>
-                    <th>Vaccine</th>
-                    <th>Birth</th>
-                    <th>1 mo</th>
-                    <th>2 mos</th>
-                    <th>4 mos</th>
-                    <th>6 mos</th>
-                    <th>9 mos</th>
-                    <th>12 mos</th>
-                    <th>15 mos</th>
-                    <th>18 mos</th>
-                    <th>19-23 mos</th>
-                    <th>2-3 yrs</th>
-                    <th>4-6 yrs</th>
-                    <th>7-10 yrs</th>
-                    <th>11-12 yrs</th>
-                    <th>13-15 yrs</th>
-                    <th>16 yrs</th>
-                    <th>17-18 yrs</th>
+                    <th>واکسن</th>
+                    <th>تولد</th>
+                    <th>۱ ماه</th>
+                    <th>۲ ماه</th>
+                    <th>۴ ماه</th>
+                    <th>۶ ماه</th>
+                    <th>۹ ماه</th>
+                    <th>۱۲ ماه</th>
+                    <th>۱۵ ماه</th>
+                    <th>۱۸ ماه</th>
+                    <th>۱۹-۲۳ ماه</th>
+                    <th>۲-۳ سال</th>
+                    <th>۴-۶ سال</th>
+                    <th>۷-۱۰ سال</th>
+                    <th>۱۱-۱۲ سال</th>
+                    <th>۱۳-۱۵ سال</th>
+                    <th>۱۶ سال</th>
+                    <th>۱۷-۱۸ سال</th>
                 </tr>
             </thead>
             <tbody>
@@ -433,6 +458,7 @@
                 </tr>
             </tbody>
         </table>
+        </div>
         <p class="note"><strong>توجه:</strong> جدول بالا یک نمایش ساده شده از برنامه پیچیده واکسیناسیون آمریکا است و برای جزئیات دقیق باید به منابع رسمی CDC مراجعه شود. "See footnote" به توضیحات و شرایط خاص در برنامه اصلی اشاره دارد.</p>
 
         <h3>تفاوت‌های کلیدی دیگر بین برنامه ایران و آمریکا:</h3>
