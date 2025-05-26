@@ -7,232 +7,212 @@
     <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet" type="text/css" />
     <style>
         body {
-            font-family: 'Vazirmatn', Arial, sans-serif;
-            line-height: 1.9;
-            margin: 0;
-            padding: 0;
-            background-color: #f9fbfc; /* Lighter, slightly bluer background */
-            color: #37474f; /* Softer dark grey text */
-            direction: rtl;
-        }
-        .container {
-            max-width: 1000px;
-            margin: 30px auto;
-            background-color: #ffffff;
-            padding: 30px 40px;
-            border-radius: 12px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-        }
-        h1 {
-            text-align: center;
-            color: #0d47a1; /* Deeper professional blue */
-            border-bottom: 3px solid #1565c0; /* Slightly lighter blue underline */
-            padding-bottom: 20px;
-            margin-bottom: 35px;
-            font-size: 2.3em;
-            font-weight: 700;
-        }
-        h2 {
-            color: #1976d2; /* Standard blue */
-            border-bottom: 2px solid #bbdefb; /* Light blue underline */
-            padding-bottom: 15px;
-            margin-top: 45px;
-            margin-bottom: 25px;
-            font-size: 1.9em;
-            font-weight: 600;
-        }
-        h3 {
-            color: #0288d1; /* Light, informative blue */
-            margin-top: 35px;
-            margin-bottom: 20px;
-            font-size: 1.6em;
-            font-weight: 500;
-        }
-        ul, ol {
-            padding-right: 25px;
-        }
-        li {
-            margin-bottom: 18px;
-            line-height: 1.85;
-        }
-        p {
-            margin-bottom: 18px;
-            text-align: justify;
-            line-height: 1.95;
-        }
-        strong {
-            color: #ff0000; /* Red color for emphasis */
-            font-weight: 600;
-        }
-        .note, .task, .important-exam-topic, .reference-note { /* Added .reference-note here */
-            background-color: #e9f7fd;
-            border-right: 7px solid #1e88e5;
-            padding: 20px 25px;
-            margin-top: 25px;
-            margin-bottom: 25px;
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.07);
-        }
-        .important-exam-topic {
-            background-color: #fff3e0; /* Light orange for exam topics */
-            border-right-color: #ff9800; /* Orange border */
-        }
-        .reference-note { /* Added style for reference-note */
-            background-color: #e8f5e9;
-            border-right-color: #4caf50;
-        }
-        .note strong, .task strong, .important-exam-topic strong, .reference-note strong {
-            color: #1565c0;
-        }
-        .important-exam-topic strong {
-            color: #e65100;
-        }
-        .reference-note strong { /* Added style for strong within reference-note */
-            color: #2e7d32;
-        }
-        .sub-bullet {
-            list-style-type: disc;
-            margin-right: 30px;
-            margin-top: 10px;
-        }
-        .sub-bullet li {
-            margin-bottom: 12px;
-        }
-        hr {
-            border: 0;
-            height: 1px;
-            background-color: #cfd8dc; /* Softer grey for horizontal rule */
-            margin: 45px 0;
-        }
-        .final-salutation {
-            text-align: center;
-            font-style: italic;
-            color: #546e7a; /* Medium-dark grey */
-            margin-top: 35px;
-            font-size: 1.1em;
-        }
+    font-family: 'Vazirmatn', Arial, sans-serif;
+    line-height: 1.9;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f8fb;
+    color: #37474f;
+    direction: rtl;
+}
 
-        /* Responsive table wrapper */
-        .table-responsive-wrapper {
-            overflow-x: auto;
-            -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
-            margin-bottom: 1.5em;
-            border: 1px solid #dee2e6;
-            border-radius: 8px;
-            background-color: #fff; /* Ensure background for the wrapper */
-        }
-        table {
-            width: 100%;
-            min-width: 800px; /* Set a min-width for table to ensure it can be scrolled if needed */
-            border-collapse: collapse;
-            margin:0;
-        }
-        th, td {
-            border: 1px solid #b0bec5;
-            padding: 12px 15px;
-            text-align: right;
-            line-height: 1.7;
-            white-space: nowrap;
-        }
-        th {
-            background-color: #e8f0fe;
-            color: #0056b3;
-            font-weight: 600;
-            position: sticky;
-            top: 0;
-            z-index: 1;
-        }
-        tr:nth-child(even) {
-            background-color: #f8f9fa;
-        }
-        caption {
-            caption-side: top;
-            font-size: 1.1em;
-            font-weight: bold;
-            color: #007bff;
-            margin-bottom: 15px;
-            margin-top: 20px;
-        }
-        .diagram-description { /* Copied from previous session's optimized CSS */
-            background-color: #f1f8e9;
-            border: 1px dashed #8bc34a;
-            padding: 15px;
-            margin: 20px 0;
-            border-radius: 8px;
-            font-style: italic;
-            color: #33691e;
-        }
+.container {
+    max-width: 1000px;
+    margin: 30px auto;
+    background-color: #ffffff;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
 
-        /* General mobile optimizations using a media query */
-        @media (max-width: 768px) {
-            .container {
-                margin: 15px;
-                padding: 20px 15px;
-                box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
-            }
+h1, h2, h3 {
+    font-weight: bold;
+    text-align: right;
+    line-height: 1.4;
+}
 
-            h1 {
-                font-size: 1.9em;
-                margin-bottom: 25px;
-                padding-bottom: 15px;
-            }
+h1 {
+    text-align: center;
+    color: #0d47a1;
+    border-bottom: 3px solid #1565c0;
+    padding-bottom: 20px;
+    margin-bottom: 35px;
+    font-size: 2.3em;
+}
 
-            h2 {
-                font-size: 1.6em;
-                margin-top: 35px;
-                margin-bottom: 20px;
-                padding-bottom: 12px;
-            }
+h2 {
+    color: #1976d2;
+    border-bottom: 2px solid #bbdefb;
+    padding-bottom: 15px;
+    margin: 45px 0 25px;
+    font-size: 1.9em;
+}
 
-            h3 {
-                font-size: 1.4em;
-                margin-top: 25px;
-                margin-bottom: 15px;
-            }
+h3 {
+    color: #0288d1;
+    margin: 35px 0 20px;
+    font-size: 1.6em;
+}
 
-            p, li {
-                font-size: 0.98em;
-                line-height: 1.85;
-            }
-            
-            /* Adjustments for table cells on mobile */
-            th, td {
-                padding: 10px 12px;
-                font-size: 0.9em; /* Slightly smaller font in tables for mobile */
-            }
-            table {
-                min-width: 600px; /* Adjust min-width for tables on smaller screens */
-            }
-        }
+ul, ol {
+    padding-right: 25px;
+}
 
-        @media (max-width: 480px) {
-            .container {
-                margin: 10px;
-                padding: 15px 10px;
-                border-radius: 8px;
-            }
-            h1 {
-                font-size: 1.7em;
-            }
-            h2 {
-                font-size: 1.4em;
-            }
-            h3 {
-                font-size: 1.2em;
-            }
-            p, li {
-                font-size: 0.92em;
-            }
-            
-            /* Further reduce table cell font/padding for very small screens */
-            th, td {
-                font-size: 0.85em;
-                padding: 8px 10px;
-            }
-            table {
-                min-width: 500px; /* Further adjust for very small screens */
-            }
-        }
+li {
+    margin-bottom: 18px;
+    line-height: 1.85;
+}
+
+p {
+    margin-bottom: 18px;
+    text-align: justify;
+    line-height: 1.95;
+}
+
+strong {
+    color: #ff0000;
+    font-weight: 600;
+}
+
+.note, .task, .important-exam-topic, .reference-note {
+    padding: 20px 25px;
+    margin: 25px 0;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.07);
+}
+
+.note, .task {
+    background-color: #e9f7fd;
+    border-right: 7px solid #1e88e5;
+}
+
+.important-exam-topic {
+    background-color: #fff3e0;
+    border-right: 7px solid #ff9800;
+}
+
+.reference-note {
+    background-color: #e8f5e9;
+    border-right: 7px solid #4caf50;
+}
+
+.note strong, .task strong, .important-exam-topic strong, .reference-note strong {
+    color: #1565c0;
+}
+
+.important-exam-topic strong {
+    color: #e65100;
+}
+
+.reference-note strong {
+    color: #2e7d32;
+}
+
+.sub-bullet {
+    list-style-type: disc;
+    margin-right: 30px;
+    margin-top: 10px;
+}
+
+.sub-bullet li {
+    margin-bottom: 12px;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-color: #cfd8dc;
+    margin: 45px 0;
+}
+
+.final-salutation {
+    text-align: center;
+    font-style: italic;
+    color: #546e7a;
+    margin-top: 35px;
+    font-size: 1.1em;
+}
+
+/* جدول واکسیناسیون */
+.table-responsive-wrapper {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    margin-bottom: 1.5em;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+table {
+    width: 100%;
+    min-width: 800px;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #b0bec5;
+    padding: 12px 15px;
+    text-align: right;
+    line-height: 1.7;
+    white-space: nowrap;
+}
+
+th {
+    background-color: #e8f0fe;
+    color: #0056b3;
+    font-weight: 600;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+caption {
+    caption-side: top;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #007bff;
+    margin-bottom: 15px;
+    margin-top: 20px;
+}
+
+.diagram-description {
+    background-color: #f1f8e9;
+    border: 1px dashed #8bc34a;
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 8px;
+    font-style: italic;
+    color: #33691e;
+}
+
+/* واکنش‌گرا: موبایل و تبلت */
+@media (max-width: 768px) {
+    .container {
+        margin: 15px;
+        padding: 20px 15px;
+    }
+    h1 { font-size: 1.9em; margin-bottom: 25px; padding-bottom: 15px; }
+    h2 { font-size: 1.6em; margin: 35px 0 20px; padding-bottom: 12px; }
+    h3 { font-size: 1.4em; margin: 25px 0 15px; }
+    p, li { font-size: 0.98em; }
+    th, td { padding: 10px 12px; font-size: 0.9em; }
+    table { min-width: 600px; }
+}
+
+@media (max-width: 480px) {
+    .container { margin: 10px; padding: 15px 10px; border-radius: 8px; }
+    h1 { font-size: 1.7em; }
+    h2 { font-size: 1.4em; }
+    h3 { font-size: 1.2em; }
+    p, li { font-size: 0.92em; }
+    th, td { font-size: 0.85em; padding: 8px 10px; }
+    table { min-width: 500px; }
+}
+
     </style>
 </head>
 <body>
@@ -249,154 +229,118 @@
         </ul>
         <div class="table-responsive-wrapper">
             <table>
-                <caption>جدول برنامه واکسیناسیون توصیه شده برای سنین ۰ تا ۱۸ سال در آمریکا (۲۰۲۳) - برگرفته از جزوه</caption>
-                <thead>
-                    <tr>
-                        <th>Vaccine</th>
-                        <th>Birth</th>
-                        <th>1 mo</th>
-                        <th>2 mos</th>
-                        <th>4 mos</th>
-                        <th>6 mos</th>
-                        <th>9 mos</th>
-                        <th>12 mos</th>
-                        <th>15 mos</th>
-                        <th>18 mos</th>
-                        <th>19-23 mos</th>
-                        <th>2-3 yrs</th>
-                        <th>4-6 yrs</th>
-                        <th>7-10 yrs</th>
-                        <th>11-12 yrs</th>
-                        <th>13-15 yrs</th>
-                        <th>16 yrs</th>
-                        <th>17-18 yrs</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Hepatitis B (HepB)</td>
-                        <td>1st dose</td>
-                        <td></td>
-                        <td colspan="3">See footnote (2nd dose)</td>
-                        <td></td>
-                        <td colspan="6">See footnote (3rd dose)</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>Rotavirus (RV) RV1 (2-dose); RV5 (3-dose)</td>
-                        <td></td>
-                        <td></td>
-                        <td>1st dose</td>
-                        <td>2nd dose</td>
-                        <td>See footnote (3rd dose if RV5)</td>
-                        <td colspan="12"></td>
-                    </tr>
-                    <tr>
-                        <td>Diphtheria, tetanus, & acellular pertussis (DTaP: <7 yrs)</td>
-                        <td></td>
-                        <td></td>
-                        <td>1st dose</td>
-                        <td>2nd dose</td>
-                        <td>3rd dose</td>
-                        <td></td>
-                        <td></td>
-                        <td>4th dose</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td>5th dose</td>
-                        <td colspan="5"></td>
-                    </tr>
-                    <tr>
-                        <td>Haemophilus influenzae type b (Hib)</td>
-                        <td></td>
-                        <td></td>
-                        <td>1st dose</td>
-                        <td>2nd dose</td>
-                        <td>See footnote (3rd or 4th dose)</td>
-                        <td></td>
-                        <td colspan="2">See footnote (Booster dose)</td>
-                        <td colspan="9"></td>
-                    </tr>
-                    <tr>
-                        <td>Pneumococcal conjugate (PCV13)</td>
-                        <td></td>
-                        <td></td>
-                        <td>1st dose</td>
-                        <td>2nd dose</td>
-                        <td>3rd dose</td>
-                        <td></td>
-                        <td colspan="2">4th dose</td>
-                        <td colspan="9"></td>
-                    </tr>
-                    <tr>
-                        <td>Inactivated poliovirus (IPV: <18 yrs)</td>
-                        <td></td>
-                        <td></td>
-                        <td>1st dose</td>
-                        <td>2nd dose</td>
-                        <td>3rd dose</td>
-                        <td colspan="6"></td>
-                        <td>4th dose</td>
-                        <td colspan="5"></td>
-                    </tr>
-                    <tr>
-                        <td>Influenza (IIV or LAIV)</td>
-                        <td colspan="5">Annual vaccination, 1 or 2 doses</td>
-                        <td colspan="12">Annual vaccination, 1 dose</td>
-                    </tr>
-                    <tr>
-                        <td>Measles, mumps, rubella (MMR)</td>
-                        <td colspan="6"></td>
-                        <td colspan="2">1st dose</td>
-                        <td colspan="3"></td>
-                        <td>2nd dose</td>
-                        <td colspan="5"></td>
-                    </tr>
-                    <tr>
-                        <td>Varicella (VAR)</td>
-                        <td colspan="6"></td>
-                        <td colspan="2">1st dose</td>
-                        <td colspan="3"></td>
-                        <td>2nd dose</td>
-                        <td colspan="5"></td>
-                    </tr>
-                    <tr>
-                        <td>Hepatitis A (HepA)</td>
-                        <td colspan="6"></td>
-                        <td colspan="4">2-dose series, see footnote</td>
-                        <td colspan="7"></td> </tr>
-                    <tr>
-                        <td>Meningococcal (MenACWY-D ≥9 mos; MenACWY-CRM ≥2 mos; MenB)</td>
-                        <td></td>
-                        <td></td>
-                        <td colspan="3">See footnote (high-risk)</td>
-                        <td colspan="8"></td>
-                        <td>1st dose MenACWY</td>
-                        <td></td>
-                        <td>2nd dose MenACWY; MenB series</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>Tetanus, diphtheria, & acellular pertussis (Tdap: ≥7 yrs)</td>
-                        <td colspan="13"></td>
-                        <td>1 dose</td>
-                        <td colspan="3"></td>
-                    </tr>
-                    <tr>
-                        <td>Human papillomavirus (HPV)</td>
-                        <td colspan="10"></td> <td >See footnote (can start at 9 yrs)</td> <td></td>
-                        <td colspan="2">2 or 3-dose series</td>
-                        <td colspan="2"></td> </tr>
-                    <tr>
-                        <td>Pneumococcal polysaccharide (PPSV23)</td>
-                        <td colspan="10"></td> <td colspan="7">See footnotes (for certain high-risk groups)</td>
-                    </tr>
-                </tbody>
-            </table>
+            <caption>جدول برنامه واکسیناسیون توصیه‌شده برای سنین ۰ تا ۱۸ سال در آمریکا (۲۰۲۳)</caption>
+            <thead>
+                <tr>
+                    <th>واکسن</th>
+                    <th>تولد</th>
+                    <th>۱ ماه</th>
+                    <th>۲ ماه</th>
+                    <th>۴ ماه</th>
+                    <th>۶ ماه</th>
+                    <th>۹ ماه</th>
+                    <th>۱۲ ماه</th>
+                    <th>۱۵ ماه</th>
+                    <th>۱۸ ماه</th>
+                    <th>۱۹–۲۳ ماه</th>
+                    <th>۲–۳ سال</th>
+                    <th>۴–۶ سال</th>
+                    <th>۷–۱۰ سال</th>
+                    <th>۱۱–۱۲ سال</th>
+                    <th>۱۳–۱۵ سال</th>
+                    <th>۱۶ سال</th>
+                    <th>۱۷–۱۸ سال</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>هپاتیت B (HepB)</td>
+                    <td>دوز اول</td>
+                    <td></td>
+                    <td colspan="3">دوز دوم (طبق پاورقی)</td>
+                    <td></td>
+                    <td colspan="6">دوز سوم (طبق پاورقی)</td>
+                    <td></td><td></td><td></td><td></td><td></td>
+                </tr>
+                <tr>
+                    <td>روتاویروس (RV1، RV5)</td>
+                    <td></td><td></td><td>دوز اول</td><td>دوز دوم</td>
+                    <td>دوز سوم (اگر RV5)</td>
+                    <td colspan="12"></td>
+                </tr>
+                <tr>
+                    <td>دیفتری، کزاز، سیاه‌سرفه (DTaP)</td>
+                    <td></td><td></td><td>دوز اول</td><td>دوز دوم</td>
+                    <td>دوز سوم</td><td></td><td></td><td>دوز چهارم</td>
+                    <td></td><td></td><td></td><td>دوز پنجم</td>
+                    <td colspan="5"></td>
+                </tr>
+                <tr>
+                    <td>هموفیلوس آنفلوآنزا نوع B (Hib)</td>
+                    <td></td><td></td><td>دوز اول</td><td>دوز دوم</td>
+                    <td>دوز سوم یا چهارم (طبق پاورقی)</td>
+                    <td></td><td colspan="2">دوز یادآور</td>
+                    <td colspan="9"></td>
+                </tr>
+                <tr>
+                    <td>پنوموکوک کونژوگه (PCV13)</td>
+                    <td></td><td></td><td>دوز اول</td><td>دوز دوم</td><td>دوز سوم</td>
+                    <td></td><td colspan="2">دوز چهارم</td>
+                    <td colspan="9"></td>
+                </tr>
+                <tr>
+                    <td>فلج اطفال (IPV)</td>
+                    <td></td><td></td><td>دوز اول</td><td>دوز دوم</td>
+                    <td>دوز سوم</td><td></td><td></td><td></td><td></td>
+                    <td></td><td></td><td>دوز چهارم</td>
+                    <td colspan="5"></td>
+                </tr>
+                <tr>
+                    <td>آنفلوآنزا (IIV یا LAIV)</td>
+                    <td colspan="5">سالانه، ۱ یا ۲ دوز</td>
+                    <td colspan="12">سالانه، ۱ دوز</td>
+                </tr>
+                <tr>
+                    <td>سرخک، اوریون، سرخجه (MMR)</td>
+                    <td colspan="6"></td><td colspan="2">دوز اول</td>
+                    <td colspan="3"></td><td>دوز دوم</td>
+                    <td colspan="5"></td>
+                </tr>
+                <tr>
+                    <td>آبله‌مرغان (Varicella)</td>
+                    <td colspan="6"></td><td colspan="2">دوز اول</td>
+                    <td colspan="3"></td><td>دوز دوم</td>
+                    <td colspan="5"></td>
+                </tr>
+                <tr>
+                    <td>هپاتیت A (HepA)</td>
+                    <td colspan="6"></td><td colspan="4">۲ دوز (طبق پاورقی)</td>
+                    <td colspan="8"></td>
+                </tr>
+                <tr>
+                    <td>مننژوکوک (MenACWY, MenB)</td>
+                    <td colspan="3">دوز در شرایط خاص</td>
+                    <td colspan="10"></td>
+                    <td>دوز اول</td><td></td><td>دوز دوم</td><td></td>
+                </tr>
+                <tr>
+                    <td>Tdap (بزرگتر از ۷ سال)</td>
+                    <td colspan="13"></td><td>۱ دوز</td><td colspan="3"></td>
+                </tr>
+                <tr>
+                    <td>HPV</td>
+                    <td colspan="11"></td>
+                    <td>شروع از ۹ سالگی (پاورقی)</td>
+                    <td colspan="2">۲ یا ۳ دوز</td>
+                    <td colspan="3"></td>
+                </tr>
+                <tr>
+                    <td>PPSV23 (گروه‌های پرخطر)</td>
+                    <td colspan="11"></td>
+                    <td colspan="7">طبق پاورقی در شرایط خاص</td>
+                </tr>
+            </tbody>
+        </table>
         </div>
         <p class="note"><strong>توجه:</strong> جدول بالا یک نمایش ساده شده از برنامه پیچیده واکسیناسیون آمریکا است و برای جزئیات دقیق باید به منابع رسمی CDC مراجعه شود. "See footnote" به توضیحات و شرایط خاص در برنامه اصلی اشاره دارد.</p>
 
