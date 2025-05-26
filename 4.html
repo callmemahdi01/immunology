@@ -64,7 +64,7 @@
             color: #ff0000; /* Red color for emphasis */
             font-weight: 600;
         }
-        .note, .task {
+        .note, .task { /* .important-exam-topic and .reference-note removed as not used in this specific file's content */
             background-color: #e9f7fd;
             border-right: 7px solid #1e88e5;
             padding: 20px 25px;
@@ -73,8 +73,8 @@
             border-radius: 10px;
             box-shadow: 0 5px 15px rgba(0,0,0,0.07);
         }
-        .note strong, .task strong {
-            color: #1565c0; /* Deeper blue for strong text within notes/tasks */
+        .note strong, .task strong { /* .important-exam-topic strong and .reference-note strong removed */
+            color: #1565c0; 
         }
         .sub-bullet {
             list-style-type: disc;
@@ -97,37 +97,51 @@
             margin-top: 35px;
             font-size: 1.1em;
         }
+
+        /* Responsive table wrapper */
+        .table-responsive-wrapper {
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+            margin-bottom: 1.5em;
+            border: 1px solid #dee2e6;
+            border-radius: 8px;
+            background-color: #fff;
+        }
         table {
             width: 100%;
+            min-width: 800px; 
             border-collapse: collapse;
-            margin-top: 25px;
-            margin-bottom: 25px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            font-size: 0.95em;
+            margin-top: 0;
+            margin-bottom: 0;
+            font-size: 0.95em; /* from your general table styles */
         }
         th, td {
             border: 1px solid #b0bec5;
-            padding: 10px 12px; /* Adjusted padding for tables */
+            padding: 10px 12px; /* from your general th,td styles */
             text-align: right;
             line-height: 1.6;
+            white-space: nowrap;
         }
         th {
-            background-color: #e8f0fe; /* Lighter blue for table headers */
-            color: #0056b3; /* Header text color */
+            background-color: #e8f0fe;
+            color: #0056b3;
             font-weight: 600;
+            position: sticky;
+            top: 0;
+            z-index: 1;
         }
         tr:nth-child(even) {
             background-color: #f8f9fa;
         }
         caption {
-            caption-side: top; /* Changed to top for better context */
+            caption-side: top;
             font-size: 1.1em;
             font-weight: bold;
             color: #007bff;
-            margin-bottom: 10px;
-            margin-top: 15px;
+            margin-bottom: 10px; /* from your general caption styles */
+            margin-top: 15px;  /* from your general caption styles */
         }
-                .nav-button {
+        .nav-button {
             padding: 10px 20px;
             font-size: 1em;
             margin: 10px;
@@ -138,9 +152,83 @@
             cursor: pointer;
             transition: background-color 0.3s ease;
         }
-
         .nav-button:hover {
             background-color: #0056b3;
+        }
+        .nav-container {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                margin: 15px;
+                padding: 20px 15px;
+                box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            }
+            h1 {
+                font-size: 1.9em;
+                margin-bottom: 25px;
+                padding-bottom: 15px;
+            }
+            h2 {
+                font-size: 1.6em;
+                margin-top: 35px;
+                margin-bottom: 20px;
+                padding-bottom: 12px;
+            }
+            h3 {
+                font-size: 1.4em;
+                margin-top: 25px;
+                margin-bottom: 15px;
+            }
+            p, li {
+                font-size: 0.98em;
+                line-height: 1.85;
+            }
+            
+            th, td {
+                padding: 10px 12px;
+                font-size: 0.9em; 
+            }
+            table {
+                min-width: 700px; 
+                font-size: 0.9em; /* Adjusted from 12px to match other relative font sizes */
+            }
+             .nav-button {
+                padding: 9px 18px;
+                font-size: 0.95em;
+                margin: 8px 4px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                margin: 10px;
+                padding: 15px 10px;
+                border-radius: 8px;
+            }
+            h1 { font-size: 1.7em; }
+            h2 { font-size: 1.4em; }
+            h3 { font-size: 1.2em; }
+            p, li { font-size: 0.92em; }
+            
+            th, td {
+                font-size: 0.85em;
+                padding: 8px 10px;
+            }
+            table {
+                min-width: 600px; 
+            }
+            .nav-button {
+                width: calc(50% - 10px); 
+                margin: 5px;
+            }
+            .nav-container {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+            }
         }
     </style>
 </head>
@@ -179,6 +267,7 @@
 
         <h2>برنامه ملی واکسیناسیون در ایران</h2>
         <p>واکسن‌های برنامه ملی در ایران عموماً در <strong>۷ نوبت اصلی</strong> تزریق می‌شوند.</p>
+    <div class="table-responsive-wrapper">
         <table>
             <caption>جدول برنامه واکسیناسیون کشوری (نمونه برنامه با واکسن پنج‌گانه و شش‌گانه)</caption>
             <thead>
@@ -226,6 +315,7 @@
                 </tr>
             </tbody>
         </table>
+    </div>
         <p>هر کشوری بر حسب شرایط جغرافیایی و شیوع بیماری‌ها، برنامه واکسیناسیون خاص خود را دارد. برنامه واکسیناسیون سال به سال یا هر چند سال یکبار بازبینی شده و نوع واکسن‌ها هم ممکن است تغییر کند.</p>
 
         <h3>نکات تکمیلی برنامه واکسیناسیون:</h3>
@@ -254,6 +344,7 @@
         <div class="note">
             <p><strong>بحث زمان ورود کودکان به اجتماع:</strong> توصیه می‌شود بچه‌ها خیلی زود در محیط‌های اجتماعی شلوغ قرار نگیرند.</p>
         </div>
+    <div class="table-responsive-wrapper">
         <table>
             <caption>برنامه ملی واکسیناسیون جمهوری اسلامی ایران (نمونه جدول از جزوه)</caption>
             <thead>
@@ -305,6 +396,7 @@
                 </tr>
             </tbody>
         </table>
+    </div>
 
         <h3>واکسن‌های زایشگاهی و نحوه تجویز:</h3>
         <p>تعداد واکسن‌های زایشگاهی سه عدد است: <strong>OPV (پولیو خوراکی)</strong>, <strong>HBV (هپاتیت ب)</strong>, <strong>BCG</strong>.</p>
@@ -377,9 +469,10 @@
             <strong>تکلیف دانشجویان بین‌الملل:</strong> نام بیماری‌های عفونی واکسن‌دار در کشورشان را با نام محلی (Local Name) روی کاغذ نوشته و جلسه بعد تحویل دهند.
         </div>
         <hr>
-        <button class="nav-button" onclick="window.location.href='3.html'">جلسه قبل</button>
-        <button class="nav-button" onclick="window.location.href='5.html'">جلسه بعد</button>
-        
+        <div class="nav-container">
+            <button class="nav-button" onclick="window.location.href='3.html'">جلسه قبل</button>
+            <button class="nav-button" onclick="window.location.href='5.html'">جلسه بعد</button>
+        </div>
         <p class="final-salutation">جمع اورنده: مهدی رضایی</p>
     </div>
 </body>
