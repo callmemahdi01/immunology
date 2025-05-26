@@ -11,8 +11,8 @@
             line-height: 1.9;
             margin: 0;
             padding: 0;
-            background-color: #f8f9fa;
-            color: #343a40;
+            background-color: #f9fbfc;
+            color: #37474f;
             direction: rtl;
         }
         .container {
@@ -25,16 +25,16 @@
         }
         h1 {
             text-align: center;
-            color: #0056b3;
-            border-bottom: 3px solid #0056b3;
+            color: #0d47a1;
+            border-bottom: 3px solid #1565c0;
             padding-bottom: 20px;
             margin-bottom: 35px;
             font-size: 2.3em;
             font-weight: 700;
         }
         h2 {
-            color: #007bff;
-            border-bottom: 2px solid #e0e7ff;
+            color: #1976d2;
+            border-bottom: 2px solid #bbdefb;
             padding-bottom: 15px;
             margin-top: 45px;
             margin-bottom: 25px;
@@ -42,7 +42,7 @@
             font-weight: 600;
         }
         h3 {
-            color: #17a2b8;
+            color: #0288d1;
             margin-top: 35px;
             margin-bottom: 20px;
             font-size: 1.6em;
@@ -78,17 +78,17 @@
             border-right-color: #ff9800;
         }
         .reference-note {
-            background-color: #e8f5e9; /* Light green for reference notes */
-            border-right-color: #4caf50; /* Green border */
+            background-color: #e8f5e9;
+            border-right-color: #4caf50;
         }
         .note strong, .task strong, .important-exam-topic strong, .reference-note strong {
-            color: #1565c0;
+            color: #1565c0; /* Specific strong color for these boxes, overrides general red */
         }
         .important-exam-topic strong {
             color: #e65100;
         }
         .reference-note strong {
-            color: #2e7d32; /* Darker green for strong text in reference boxes */
+            color: #2e7d32;
         }
         .sub-bullet {
             list-style-type: disc;
@@ -111,12 +111,22 @@
             margin-top: 35px;
             font-size: 1.1em;
         }
+
+        /* Responsive table wrapper */
+        .table-responsive-wrapper {
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+            margin-bottom: 1.5em;
+            border: 1px solid #dee2e6;
+            border-radius: 8px;
+            background-color: #fff;
+        }
         table {
             width: 100%;
+            min-width: 800px; /* Default min-width, can be overridden in media queries */
             border-collapse: collapse;
-            margin-top: 25px;
-            margin-bottom: 25px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            margin-top: 0;
+            margin-bottom: 0;
             font-size: 0.9em;
             table-layout: auto;
         }
@@ -126,34 +136,38 @@
             text-align: right;
             line-height: 1.6;
             word-wrap: break-word;
+            white-space: nowrap;
         }
         th {
             background-color: #e8f0fe;
             color: #0056b3;
             font-weight: 600;
-            white-space: nowrap;
+            position: sticky;
+            top: 0;
+            z-index: 1;
         }
         tr:nth-child(even) {
             background-color: #f8f9fa;
         }
         caption {
             caption-side: top;
-            font-size: 1.1em;
+            text-align: center;
             font-weight: bold;
+            font-size: 1.1em;
+            margin-bottom: 15px;
             color: #007bff;
-            margin-bottom: 10px;
             margin-top: 15px;
         }
         .diagram-description {
-            background-color: #f1f8e9; /* Light green for diagram descriptions */
-            border: 1px dashed #8bc34a; /* Green dashed border */
+            background-color: #f1f8e9;
+            border: 1px dashed #8bc34a;
             padding: 15px;
             margin: 20px 0;
             border-radius: 8px;
             font-style: italic;
-            color: #33691e; /* Dark green text */
+            color: #33691e;
         }
-                .nav-button {
+        .nav-button {
             padding: 10px 20px;
             font-size: 1em;
             margin: 10px;
@@ -164,9 +178,84 @@
             cursor: pointer;
             transition: background-color 0.3s ease;
         }
-
         .nav-button:hover {
             background-color: #0056b3;
+        }
+        .nav-container {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        /* General mobile optimizations using a media query */
+        @media (max-width: 768px) {
+            .container {
+                margin: 15px;
+                padding: 20px 15px;
+                box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            }
+            h1 {
+                font-size: 1.9em;
+                margin-bottom: 25px;
+                padding-bottom: 15px;
+            }
+            h2 {
+                font-size: 1.6em;
+                margin-top: 35px;
+                margin-bottom: 20px;
+                padding-bottom: 12px;
+            }
+            h3 {
+                font-size: 1.4em;
+                margin-top: 25px;
+                margin-bottom: 15px;
+            }
+            p, li {
+                font-size: 0.98em;
+                line-height: 1.85;
+            }
+            
+            th, td {
+                padding: 10px 12px;
+                font-size: 0.9em; 
+            }
+            table {
+                min-width: 700px; 
+                font-size: 12px; /* from your media query example, ensure units if needed */
+            }
+             .nav-button {
+                padding: 9px 18px;
+                font-size: 0.95em;
+                margin: 8px 4px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                margin: 10px;
+                padding: 15px 10px;
+                border-radius: 8px;
+            }
+            h1 { font-size: 1.7em; }
+            h2 { font-size: 1.4em; }
+            h3 { font-size: 1.2em; }
+            p, li { font-size: 0.92em; }
+            
+            th, td {
+                font-size: 0.85em;
+                padding: 8px 10px;
+            }
+            table {
+                min-width: 600px; 
+            }
+            .nav-button {
+                width: calc(50% - 10px); 
+                margin: 5px;
+            }
+            .nav-container {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+            }
         }
     </style>
 </head>
@@ -213,6 +302,7 @@
             <li><strong>AIDS:</strong> Acquired Immunodeficiency Syndrome (ترجمه بهتر: نشانگان نقص اکتسابی ایمنی، که تاکید بر اکتسابی بودن "نقص" دارد).</li>
             <li><strong>دسته‌بندی‌های دیگر ID:</strong> اولیه یا ثانویه؟ خفیف یا شدید؟ هومورال یا سلولی؟ گذرا یا دائمی؟ و غیره.</li>
         </ul>
+    <div class="table-responsive-wrapper">
         <table>
             <caption>تعادل و اختلالات سیستم ایمنی (برگرفته از جدول اسلاید)</caption>
             <thead>
@@ -225,7 +315,7 @@
             <tbody>
                 <tr>
                     <td>نقص ایمنی (Immunodeficiency) و عفونت (Infection)</td>
-                    <td rowspan rowspan="2">دفاع (Defence) / پایش (Surveillance)</td>
+                    <td rowspan="2">دفاع (Defence) / پایش (Surveillance)</td>
                     <td>آلرژی (Allergy)</td>
                 </tr>
                 <tr>
@@ -234,6 +324,7 @@
                 </tr>
             </tbody>
         </table>
+    </div>
         <h3>مشخصات نقص ایمنی:</h3>
         <ul>
             <li><strong>تظاهرات بالینی:</strong>
@@ -273,6 +364,7 @@
         <p>نقص ایمنی با <strong>آلرژی‌ها</strong> هم مرتبط است. بعضی نقص‌های ایمنی ایجاد آلرژی می‌کنند و برعکس، گاهی اوقات شخصی که آلرژی شدید دارد، ممکن است آثاری از نقص ایمنی (حتی مختصر، مانند نقص ناشی از سوءتغذیه) داشته باشد.</p>
 
         <h3>جداول و دیاگرام‌های مرتبط با نقص ایمنی (از اسلایدها)</h3>
+    <div class="table-responsive-wrapper">
         <table>
             <caption>الگوهای عفونت در برخی اختلالات نقص ایمنی منتخب (برگرفته از جدول صفحه ۱۰ جزوه)</caption>
             <thead>
@@ -323,7 +415,8 @@
                 </tr>
             </tbody>
         </table>
-
+    </div>
+    <div class="table-responsive-wrapper">
         <table>
             <caption>سایر کمک‌های بالینی به تشخیص نقص ایمنی (عمدتاً غیرعفونی) (برگرفته از جدول صفحه ۱۰ جزوه)</caption>
             <thead>
@@ -347,6 +440,7 @@
                 </tr>
             </tbody>
         </table>
+    </div>
 
         <h4>ادامه توضیحات در مورد بیماری گرانولوماتوز مزمن (CGD):</h4>
         <p>یک بیماری نادر که در آن مونوسیت‌ها و نوتروفیل‌ها قادر به تولید واسطه‌های اکسیژن فعال (Reactive Oxygen Species - ROS) نیستند. این واسطه‌ها برای کشتن داخل‌سلولی ارگانیسم‌های بیگانه‌خواری شده ضروری هستند. مراحل فاگوسیتوز شامل شیمیوتاکسی، اتصال (attachment)، بلع (engulfment)، و هضم/کشتن (digestion/killing) است. هضم به دو صورت پروتئولیتیک (با آنزیم‌های پروتئولیتیک مانند لیزوزیم) و یا با کمک آنزیم‌هایی که اکسیژن منفرد و واسطه‌های اکسیژن تولید می‌کنند، انجام می‌شود. بیماران CGD نقص در دسته دوم آنزیم‌ها دارند. تعداد بیماران CGD در کرمان کمتر از ۱۰ نفر است. این بیماران به عفونت‌های قارچی (آسپرژیلوس فومیگاتوس، کاندیدا آلبیکنس) و باکتریایی (شایع‌ترین پاتوژن استافیلوکوک اورئوس، برخی باسیل‌های گرم منفی) شدید و مکرر مبتلا می‌شوند که در صورت عدم درمان، با ایجاد گرانولوما در محل عفونت، سیستم‌های ادراری-تناسلی و معدی-روده‌ای را مسدود می‌نمایند. طیف پاتوژن‌های عفونت‌زا نسبتاً محدود است. بیشتر گرانولوماها روی پوست و داخل دهان ایجاد می‌شود، اما در دستگاه گوارش (به‌خصوص کولون که آلوده‌ترین نقطه بدن است) و دستگاه تنفس (کمتر، چون استریل است مگر اینکه میکروبی وارد شده باشد) نیز ممکن است تشکیل شوند و موجب انسداد گردند. (استاد به عدم ترجمه نام‌های خاص مانند استافیلوکوک اورئوس به استاف طلایی یا خیام نیشابوری به چادردوز نیشابوری تاکید کردند).</p>
@@ -517,9 +611,10 @@
 
 
         <hr>
-        <button class="nav-button" onclick="window.location.href='5.html'">جلسه قبل</button>
-        
-        <p class="final-salutation">جمع اورنده: مهدی رضایی</p>
+        <div class="nav-container">
+            <button class="nav-button" onclick="window.location.href='5.html'">جلسه قبل</button>
         </div>
+        <p class="final-salutation">جمع اورنده: مهدی رضایی</p>
+    </div>
 </body>
 </html>
