@@ -58,7 +58,7 @@
             line-height: 1.9;
         }
         strong {
-            color: #fc0000; /* Green for emphasis - good for learning */
+            color: #fc0000; /* Red color for emphasis - was #28a745 (green) */
             font-weight: 600; /* Vazirmatn has good weight options */
         }
         .note {
@@ -112,7 +112,126 @@
         .nav-button:hover {
             background-color: #0056b3;
         }
+        .nav-container { /* Added a container for nav buttons for centering */
+            text-align: center;
+            margin-top: 30px;
+        }
 
+        /* Responsive table wrapper (kept for consistency) */
+        .table-responsive-wrapper {
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+            margin-bottom: 1.5em;
+            border: 1px solid #dee2e6;
+            border-radius: 8px;
+            background-color: #fff;
+        }
+        table {
+            width: 100%;
+            min-width: 800px; 
+            border-collapse: collapse;
+            margin-top: 0;
+            margin-bottom: 0;
+            font-size: 0.95em;
+        }
+        th, td {
+            border: 1px solid #b0bec5;
+            padding: 10px 12px;
+            text-align: right;
+            line-height: 1.6;
+            white-space: nowrap;
+        }
+        th {
+            background-color: #e8f0fe;
+            color: #0056b3;
+            font-weight: 600;
+            position: sticky;
+            top: 0;
+            z-index: 1;
+        }
+        tr:nth-child(even) {
+            background-color: #f8f9fa;
+        }
+        caption {
+            caption-side: top;
+            font-size: 1.1em;
+            font-weight: bold;
+            color: #007bff;
+            margin-bottom: 10px;
+            margin-top: 15px;
+        }
+
+
+        @media (max-width: 768px) {
+            .container {
+                margin: 15px;
+                padding: 20px 15px;
+                box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            }
+            h1 {
+                font-size: 1.9em;
+                margin-bottom: 25px;
+                padding-bottom: 15px;
+            }
+            h2 {
+                font-size: 1.6em;
+                margin-top: 35px;
+                margin-bottom: 20px;
+                padding-bottom: 12px;
+            }
+            h3 {
+                font-size: 1.4em;
+                margin-top: 25px;
+                margin-bottom: 15px;
+            }
+            p, li {
+                font-size: 0.98em;
+                line-height: 1.85;
+            }
+            
+            th, td { /* Table cell adjustments for mobile */
+                padding: 10px 12px;
+                font-size: 0.9em; 
+            }
+            table { /* Table adjustments for mobile */
+                min-width: 700px; 
+                font-size: 0.9em; 
+            }
+             .nav-button {
+                padding: 9px 18px;
+                font-size: 0.95em;
+                margin: 8px 4px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                margin: 10px;
+                padding: 15px 10px;
+                border-radius: 8px;
+            }
+            h1 { font-size: 1.7em; }
+            h2 { font-size: 1.4em; }
+            h3 { font-size: 1.2em; }
+            p, li { font-size: 0.92em; }
+            
+            th, td { /* Further table cell adjustments for very small screens */
+                font-size: 0.85em;
+                padding: 8px 10px;
+            }
+            table { /* Further table adjustments for very small screens */
+                min-width: 600px; 
+            }
+            .nav-button {
+                width: calc(50% - 10px); 
+                margin: 5px;
+            }
+            .nav-container {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+            }
+        }
     </style>
 </head>
 <body>
@@ -324,10 +443,10 @@
         </ul>
 
         <hr>
-        <button class="nav-button" onclick="window.location.href='2.html'">جلسه بعد</button>
-        
+        <div class="nav-container">
+            <button class="nav-button" onclick="window.location.href='2.html'">جلسه بعد</button>
+        </div>
         <p class="final-salutation">جمع اورنده: مهدی رضایی</p>
     </div>
-    
 </body>
 </html>
