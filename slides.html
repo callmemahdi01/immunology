@@ -1,0 +1,1064 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ایمنی شناسی بیماری‌های عفونی (اسلایدهای دکتر محمدی)</title>
+    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet" type="text/css" />
+    <style>
+        body {
+            font-family: 'Vazirmatn', Arial, sans-serif;
+            line-height: 1.9;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #343a40;
+            direction: rtl;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 30px auto;
+            background-color: #ffffff;
+            padding: 30px 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+        }
+        h1 {
+            text-align: center;
+            color: #0056b3;
+            border-bottom: 3px solid #0056b3;
+            padding-bottom: 20px;
+            margin-bottom: 35px;
+            font-size: 2.3em;
+            font-weight: 700;
+        }
+        h2 {
+            color: #007bff;
+            border-bottom: 2px solid #e0e7ff;
+            padding-bottom: 15px;
+            margin-top: 45px;
+            margin-bottom: 25px;
+            font-size: 1.9em;
+            font-weight: 600;
+        }
+        h3 {
+            color: #17a2b8;
+            margin-top: 35px;
+            margin-bottom: 20px;
+            font-size: 1.6em;
+            font-weight: 500;
+        }
+        ul, ol {
+            padding-right: 25px;
+        }
+        li {
+            margin-bottom: 18px;
+            line-height: 1.85;
+        }
+        p {
+            margin-bottom: 18px;
+            text-align: justify;
+            line-height: 1.95;
+        }
+        strong {
+            color: #ff0000; /* Red color for emphasis */
+            font-weight: 600;
+        }
+        .note, .task, .important-exam-topic, .reference-note, .slide-title-box {
+            background-color: #e9f7fd;
+            border-right: 7px solid #1e88e5;
+            padding: 20px 25px;
+            margin-top: 25px;
+            margin-bottom: 25px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.07);
+        }
+        .important-exam-topic {
+            background-color: #fff3e0;
+            border-right-color: #ff9800;
+        }
+        .reference-note {
+            background-color: #e8f5e9;
+            border-right-color: #4caf50;
+        }
+        .slide-title-box {
+            background-color: #f0e6ff; /* Light purple for slide titles */
+            border-right-color: #9575cd; /* Purple border */
+            text-align: center;
+        }
+        .slide-title-box h2, .slide-title-box h3 {
+            border-bottom: none;
+            margin-top: 0;
+            margin-bottom: 0;
+            color: #512da8; /* Darker purple for text */
+        }
+        .note strong, .task strong, .important-exam-topic strong, .reference-note strong, .slide-title-box strong {
+            color: #1565c0; 
+        }
+        .important-exam-topic strong {
+            color: #e65100;
+        }
+        .reference-note strong {
+            color: #2e7d32;
+        }
+        .slide-title-box strong {
+            color: #512da8;
+        }
+        .sub-bullet {
+            list-style-type: disc;
+            margin-right: 30px;
+            margin-top: 10px;
+        }
+        .sub-bullet li {
+            margin-bottom: 12px;
+        }
+        hr {
+            border: 0;
+            height: 1px;
+            background-color: #cfd8dc;
+            margin: 45px 0;
+        }
+        .final-salutation {
+            text-align: center;
+            font-style: italic;
+            color: #546e7a;
+            margin-top: 35px;
+            font-size: 1.1em;
+        }
+
+        .table-responsive-wrapper {
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+            margin-bottom: 1.5em;
+            border: 1px solid #dee2e6;
+            border-radius: 8px;
+            background-color: #fff;
+        }
+        table {
+            width: 100%;
+            min-width: 800px; 
+            border-collapse: collapse;
+            margin-top: 0; 
+            margin-bottom: 0; 
+            font-size: 0.9em; 
+            table-layout: auto;
+        }
+        th, td {
+            border: 1px solid #b0bec5; 
+            padding: 8px 10px; 
+            text-align: right;
+            line-height: 1.6;
+            word-wrap: break-word; 
+            white-space: nowrap; 
+        }
+        th {
+            background-color: #e8f0fe; 
+            color: #0056b3; 
+            font-weight: 600;
+            position: sticky;
+            top: 0;
+            z-index: 1;
+        }
+        tr:nth-child(even) {
+            background-color: #f8f9fa;
+        }
+        caption {
+            caption-side: top;
+            text-align: center; 
+            font-weight: bold;
+            font-size: 1.1em;
+            margin-bottom: 15px; 
+            color: #007bff; 
+            margin-top: 15px; 
+        }
+        .diagram-description {
+            background-color: #f1f8e9;
+            border: 1px dashed #8bc34a;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 8px;
+            font-style: italic;
+            color: #33691e;
+        }
+        .nav-button {
+            padding: 10px 20px;
+            font-size: 1em;
+            margin: 10px;
+            border: none;
+            border-radius: 8px;
+            background-color: #007bff;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .nav-button:hover {
+            background-color: #0056b3;
+        }
+        .nav-container {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                margin: 15px;
+                padding: 20px 15px;
+            }
+            h1 { font-size: 1.9em; }
+            h2 { font-size: 1.6em; }
+            h3 { font-size: 1.4em; }
+            p, li { font-size: 0.98em; }
+            
+            th, td { padding: 10px 12px; font-size: 0.9em; }
+            table { min-width: 700px; font-size: 0.9em; }
+            .nav-button { padding: 9px 18px; font-size: 0.95em; }
+        }
+
+        @media (max-width: 480px) {
+            .container { margin: 10px; padding: 15px 10px; }
+            h1 { font-size: 1.7em; }
+            h2 { font-size: 1.4em; }
+            h3 { font-size: 1.2em; }
+            p, li { font-size: 0.92em; }
+            
+            th, td { font-size: 0.85em; padding: 8px 10px; }
+            table { min-width: 500px; } /* Reduced min-width for very small screens */
+            .nav-button { width: calc(50% - 10px); margin: 5px; }
+            .nav-container { display: flex; flex-wrap: wrap; justify-content: space-around; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>ایمنی شناسی بیماری‌های عفونی</h1>
+        <p style="text-align:center;">(بر اساس اسلایدهای دکتر محمدی - دانشجویان پزشکی کرمان، مهر ۱۴۰۱)</p>
+        <p style="text-align:center;">ارائه شده در فروردین و اردیبهشت ۱۴۰۳</p>
+        <p style="text-align:center;">M. Mahdi Mohammadi, LMD, PhD, MPH (m3mahdi@yahoo.com)</p>
+
+        <hr>
+
+        <h2>فهرست و برنامه کلی دوره ایمنی شناسی بالینی</h2>
+        <p>این بخش از اسلایدها به مرور کلی سرفصل‌های ارائه شده در دوره ایمنی‌شناسی بالینی در نیمسال دوم ۱۴۰۳-۱۴۰۲ می‌پردازد.</p>
+    <div class="table-responsive-wrapper">
+        <table>
+            <caption>سرفصل‌های نظری دوره ایمنی شناسی بالینی (کد درس ۱۱۱۵۰۷۳ - یک واحد نظری)</caption>
+            <thead>
+                <tr>
+                    <th>ردیف</th>
+                    <th>سرفصل‌های نظری</th>
+                    <th>تاریخ</th>
+                    <th>استاد</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>۱</td>
+                    <td>ایمونوهماتولوژی</td>
+                    <td>۱۴۰۲/۱۲/۲۱</td>
+                    <td>دکتر جعفرزاده</td>
+                </tr>
+                <tr>
+                    <td>۲</td>
+                    <td>آلرژی و ازدیاد حساسیت فوری (تیپ ۱)</td>
+                    <td>۱۴۰۳/۱/۲۰</td>
+                    <td>دکتر جعفرزاده</td>
+                </tr>
+                <tr>
+                    <td>۳</td>
+                    <td>ازدیاد حساسیت تیپ II، III و بیماریهای خودایمنی مربوطه</td>
+                    <td>۱۴۰۳/۱/۲۷</td>
+                    <td>دکتر جعفرزاده</td>
+                </tr>
+                <tr>
+                    <td>۴</td>
+                    <td>ازدیاد حساسیت تیپ IV و بیماریهای خود ایمنی آن</td>
+                    <td>۱۴۰۳/۲/۳</td>
+                    <td>دکتر جعفرزاده</td>
+                </tr>
+                <tr>
+                    <td>۵</td>
+                    <td>ایمونولوژی پیوند و ایمونولوژی سرطان</td>
+                    <td>۱۴۰۳/۲/۱۰</td>
+                    <td>دکتر جعفرزاده</td>
+                </tr>
+                <tr>
+                    <td>۶</td>
+                    <td>ایمونوفارماکولوژی و ایمونوتراپی های رایج</td>
+                    <td>۱۴۰۳/۲/۱۷</td>
+                    <td>دکتر جعفرزاده</td>
+                </tr>
+                <tr>
+                    <td>۷</td>
+                    <td>ایمونولوژی بیماریهای عفونی</td>
+                    <td>۱۴۰۳/۲/۲۴</td>
+                    <td>دکتر محمدی</td>
+                </tr>
+                <tr>
+                    <td>۸</td>
+                    <td>پاسخ های ایمنی در مقابل باکتری، ویروس، انگل و قارچ</td>
+                    <td>۱۴۰۳/۲/۳۱</td>
+                    <td>دکتر محمدی</td>
+                </tr>
+                <tr>
+                    <td>۹</td>
+                    <td>ایمنی سازی با واکسن و با سرم</td>
+                    <td>۱۴۰۳/۳/۰۷</td>
+                    <td>دکتر محمدی</td>
+                </tr>
+                <tr>
+                    <td>۱۰</td>
+                    <td>بیماریهای نقص ایمنی</td>
+                    <td>۱۴۰۳/۳/۲۱</td>
+                    <td>دکتر محمدی</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+        <div class="reference-note">
+            <h3>مرور مباحث جلسات قبلی ایمونولوژی</h3>
+            <ul>
+                <li>ایمنی‌شناسی پایه</li>
+                <li>ایمنی ذاتی و اکتسابی</li>
+                <li>سلول‌ها و مولکول‌ها (آنتی‌بادی، آنتی‌ژن، کمپلمان، سایتوکاین‌ها، التهاب و غیره)</li>
+                <li>سلول‌ها، بافت‌ها، ارگان‌ها، سیستم</li>
+                <li><strong>ایمنی‌شناسی بالینی شامل:</strong>
+                    <ul class="sub-bullet">
+                        <li>ایمنوهماتولوژی</li>
+                        <li>آلرژی (واکنش‌های ازدیاد حساسیت)</li>
+                        <li>خودایمنی</li>
+                        <li>ایمنی پیوند</li>
+                        <li>ایمنی تومور</li>
+                        <li>ایمونوفارماکولوژی</li>
+                        <li>نقص ایمنی</li>
+                        <li>ایمونوتراپی</li>
+                        <li>ایمنی‌شناسی عفونت‌ها</li>
+                        <li>واکسن‌ها و آنتی‌سرم‌ها (ایمن‌سازی)</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+        <h2>منابع پیشنهادی</h2>
+        <p>در اسلایدها به اهمیت منابع در ابتدای هر بحث اشاره شده است ("The first sentences, always about the references!").</p>
+        <div class="reference-note">
+            <ul>
+                <li><strong>Immunology: A Short Course</strong> - by Richard Coico, Geoffrey Sunshine (Seventh Edition, Wiley Blackwell).
+                    <ul class="sub-bullet">
+                        <li>فصول مهم این کتاب که در اسلایدها به آنها اشاره شده: فصل ۱۸ (نقص ایمنی و نئوپلازی‌های سیستم لنفوئیدی)، فصل ۱۹ (پیوند)، فصل ۲۰ (ایمونولوژی تومور)، فصل ۲۱ (مقاومت و ایمن‌سازی در برابر بیماری‌های عفونی).</li>
+                    </ul>
+                </li>
+                <li><strong>Really Essential Medical Immunology</strong> - by Arthur Rabson, Ivan M.Roitt, Peter Delves (Second Edition).
+                    <ul class="sub-bullet">
+                        <li>ترجمه فارسی: ایمنی شناسی پزشکی ایران رویت.</li>
+                        <li>فصول مهم این کتاب که در اسلایدها به آنها اشاره شده: فصل ۱۳ (نقص ایمنی)، فصل ۱۴ (ازدیاد حساسیت)، فصل ۱۵ (پیوند)، فصل ۱۶ (ایمونولوژی تومور)، فصل ۱۷ (بیماری‌های خودایمنی).</li>
+                    </ul>
+                </li>
+                <li><strong>Roitt's Essential Immunology</strong> - by Peter Delves, Seamus Martin, Dennis Burton, Ivan Roitt (Thirteenth Edition, Wiley Blackwell).
+                    <ul class="sub-bullet">
+                        <li>فصول مهم این کتاب: فصل ۱۲ (واکسن‌ها)، فصل ۱۳ (نقص ایمنی)، فصل ۱۴ (آلرژی و سایر ازدیاد حساسیت‌ها)، فصل ۱۵ (پیوند)، فصل ۱۶ (ایمونولوژی تومور)، فصل ۱۷ (بیماری‌های خودایمنی).</li>
+                    </ul>
+                </li>
+                 <li><strong>Immunology for Medical Students</strong> - by Matthew Helbert (Third Edition, Elsevier).
+                    <ul class="sub-bullet">
+                        <li>فصول مهم این کتاب که در اسلایدها به آنها اشاره شده: بخش وسیعی از ایمونولوژی بالینی شامل ازدیاد حساسیت‌ها، نقص ایمنی اولیه و ثانویه، پیوند، ایمونولوژی تومور و بیوداروها.</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+        <div class="slide-title-box">
+            <h2>نگاهی به ایمونولوژی عفونت: بخش اول - دفاع در برابر میکروب‌ها</h2>
+        </div>
+
+        <h3>مقدمه‌ای بر مقاومت و ایمن‌سازی در برابر بیماری‌های عفونی (برگرفته از بنجامینی، فصل ۲۱)</h3>
+        <p>عملکرد اصلی سیستم ایمنی، دفاع از بدن در برابر بیماری‌های ناشی از پاتوژن‌ها است. بیماری‌های عفونی از نظر تاریخی عامل اصلی مرگ‌ومیر انسان‌ها، به‌ویژه در دوران نوزادی و کودکی بوده‌اند و اپیدمی‌های فاجعه‌بار زیادی در طول تاریخ رخ داده است (مانند طاعون خیارکی ناشی از باکتری یرسینیا پستیس که یک چهارم جمعیت اروپا را در قرن ۱۴ میلادی از بین برد). این بیماری‌ها فشارهای انتخابی زیادی برای تکامل سیستم ایمنی ایجاد کرده‌اند.</p>
+        <p>دفاع میزبان دارای ویژگی‌های <strong>لایه‌بندی (Layering)</strong> و <strong>افزونگی (Redundancy)</strong> است:</p>
+        <ul>
+            <li><strong>لایه‌بندی:</strong> دفاع در عمق، شامل سدهای فیزیکی (پوست، غشاهای مخاطی) و مکانیسم‌های ایمنی ذاتی و اکتسابی.</li>
+            <li><strong>افزونگی:</strong> وجود انواع متعددی از سلول‌های فاگوسیتیک، سلول‌های ارائه‌دهنده آنتی‌ژن (APCs)، سلول‌های تولیدکننده سایتوکاین، اپسونین‌ها و ... به‌طوری‌که برای بسیاری از عملکردهای ایمنی، مکانیسم‌های متعددی برای رسیدن به هدف مطلوب وجود دارد. این افزونگی به میزبان اجازه می‌دهد تا علی‌رغم نقص شدید ایمنی، برای مدت طولانی زنده بماند (مانند برخی افراد با نقص IgA که به‌دلیل جبران توسط سایر کلاس‌های ایمونوگلوبولین، زندگی نرمالی دارند).</li>
+        </ul>
+        <p>میکروب‌ها از نظر <strong>پاتوژنیسیته (Pathogenicity)</strong> و <strong>ویرولانس (Virulence)</strong> متفاوتند. پاتوژن‌ها به‌عنوان میکروب‌های قادر به ایجاد آسیب در میزبان تعریف می‌شوند. این آسیب می‌تواند در سطح سلولی، بافتی یا ارگانی رخ دهد و وقتی از یک آستانه مشخص عبور کند، به‌صورت بیماری تظاهر می‌یابد. آسیب به میزبان می‌تواند توسط میکروب (تولید توکسین، آپوپتوز سلول‌های ایمنی، تولید آنزیم‌های نکروزدهنده بافت) یا توسط خود میزبان (التهاب مخرب، فیبروز، خودایمنی) یا هر دو ایجاد شود.</p>
+        <p><strong>چارچوب پاسخ-آسیب (Damage-Response Framework):</strong> بر اساس این چارچوب مفهومی، پاتوژنیسیته به‌عنوان ظرفیت میکروب برای ایجاد آسیب در میزبان، و ویرولانس به‌عنوان ظرفیت نسبی میکروب برای ایجاد آسیب در میزبان تعریف می‌شود. اینها ویژگی‌های ذاتی میکروب نیستند و به میزبان حساس و تعاملات پیچیده بین میزبان، میکروب و عوامل محیطی، اجتماعی و انسانی بستگی دارند.</p>
+
+        <div class="diagram-description">
+            <p><strong>نمودار پیامدهای بالقوه تعامل بین میزبان و میکروب (برگرفته از شکل ۲۱.۱ بنجامینی، صفحه ۱۵ اسلایدها):</strong></p>
+            <p>این نمودار نشان می‌دهد که تماس میزبان-میکروب می‌تواند منجر به پیامدهای مختلفی شود:</p>
+            <ul>
+                <li><strong>حذف (Elimination):</strong> سیستم ایمنی میکروب را از بین می‌برد.</li>
+                <li><strong>عفونت (Infection):</strong> میکروب در بدن مستقر می‌شود. این عفونت می‌تواند منجر به:
+                    <ul class="sub-bullet">
+                        <li><strong>کلونیزاسیون (Colonization):</strong> رشد و تکثیر میکروب بدون ایجاد آسیب قابل توجه اولیه. کلونیزاسیون می‌تواند به سمت همسفرگی (Commensalism) یا بیماری (Disease) پیش رود.</li>
+                        <li><strong>بیماری (Disease):</strong> آسیب به میزبان از آستانه گذشته و علائم ظاهر می‌شوند. بیماری می‌تواند با ریشه‌کنی ایمنی و درمانی (Immune and therapeutic eradication) بهبود یابد، منجر به مرگ (Death) شود، یا به حالت پایداری (Persistence) برسد.</li>
+                        <li><strong>پایداری (Persistence):</strong> شامل مزمن شدن (Chronicity) و نهفتگی (Latency) عفونت است.</li>
+                    </ul>
+                </li>
+            </ul>
+            <p>نمودارهای کوچکی در کنار هر پیامد، میزان آسیب (Damage) را در طول زمان (Time) نشان می‌دهند.</p>
+        </div>
+        <hr/>
+        <div class="slide-title-box">
+            <h3>بخش A: دفاع میزبان در برابر کلاس‌های مختلف پاتوژن‌های میکروبی</h3>
+        </div>
+        <p>در این بخش، انواع عوامل عفونی و مکانیسم‌های دفاعی بدن در برابر آنها مورد بررسی قرار می‌گیرد.</p>
+        <h4>انواع عوامل عفونی:</h4>
+        <ul>
+            <li>ویروس‌ها</li>
+            <li>باکتری‌ها:
+                <ul class="sub-bullet">
+                    <li>داخل سلولی (اجباری یا اختیاری)</li>
+                    <li>خارج سلولی</li>
+                </ul>
+            </li>
+            <li>قارچ‌ها</li>
+            <li>انگل‌ها:
+                <ul class="sub-bullet">
+                    <li>تک‌یاخته (داخل سلولی / خارج سلولی)</li>
+                    <li>پریاخته (کرم‌ها)</li>
+                </ul>
+            </li>
+        </ul>
+        <div class="table-responsive-wrapper">
+            <table>
+                <caption>چارچوب تکلیف کلاسی: مکانیسم‌های ایمنی، فرار پاتوژن و آزارهای ایمنی</caption>
+                <thead>
+                    <tr>
+                        <th>انواع عوامل عفونی</th>
+                        <th colspan="2">ایمنی ذاتی (Innate Immunity)</th>
+                        <th colspan="2">ایمنی تطبیقی (Adaptive Immunity)</th>
+                        <th>راه‌های فرار پاتوژن از دسترس سیستم ایمنی</th>
+                        <th>آزارهای ایمنی</th>
+                    </tr>
+                    <tr>
+                        <th></th>
+                        <th>سلولی</th>
+                        <th>مولکولی/هومورال</th>
+                        <th>سلولار</th>
+                        <th>هومورال</th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>ویروس‌ها</td>
+                        <td>(مثال: NK, MØ)</td>
+                        <td>(مثال: اینترفرون‌ها)</td>
+                        <td>(مثال: CTLs, T<sub>H</sub>1)</td>
+                        <td>(مثال: آنتی‌بادی‌ها)</td>
+                        <td>(مثال: تغییرات آنتی‌ژنی، نهفتگی)</td>
+                        <td>(مثال: آسیب بافتی با واسطه ایمنی)</td>
+                    </tr>
+                    <tr>
+                        <td>باکتری‌ها (خارج سلولی)</td>
+                        <td>(مثال: نوتروفیل‌ها, MØ)</td>
+                        <td>(مثال: کمپلمان، لیزوزیم)</td>
+                        <td>(مثال: T<sub>H</sub>17)</td>
+                        <td>(مثال: آنتی‌بادی‌ها، اپسونیزاسیون)</td>
+                        <td>(مثال: کپسول، تولید توکسین)</td>
+                        <td>(مثال: سپسیس، شوک توکسیک)</td>
+                    </tr>
+                    <tr>
+                        <td>باکتری‌ها (داخل سلولی)</td>
+                        <td>(مثال: MØ, NK)</td>
+                        <td>(مثال: سایتوکاین‌ها)</td>
+                        <td>(مثال: T<sub>H</sub>1, CTLs)</td>
+                        <td>(نقش کمتر، کمک به فعال‌سازی MØ)</td>
+                        <td>(مثال: مهار همجوشی فاگولیزوزوم)</td>
+                        <td>(مثال: گرانولوما)</td>
+                    </tr>
+                    <tr>
+                        <td>قارچ‌ها</td>
+                        <td>(مثال: نوتروفیل‌ها, MØ)</td>
+                        <td>(مثال: پپتیدهای ضدمیکروبی)</td>
+                        <td>(مثال: T<sub>H</sub>1, T<sub>H</sub>17)</td>
+                        <td>(نقش محدودتر)</td>
+                        <td>(مثال: تغییر فاز، کپسول)</td>
+                        <td>(مثال: واکنش‌های آلرژیک)</td>
+                    </tr>
+                    <tr>
+                        <td>انگل‌ها (تک‌یاخته)</td>
+                        <td>(مثال: MØ)</td>
+                        <td>(مثال: کمپلمان برای برخی)</td>
+                        <td>(مثال: T<sub>H</sub>1, CTLs برای داخل‌سلولی‌ها)</td>
+                        <td>(مثال: آنتی‌بادی‌ها برای خارج‌سلولی‌ها)</td>
+                        <td>(مثال: تغییرات آنتی‌ژنی، مقاومت به لیز)</td>
+                        <td>(مثال: التهاب مزمن)</td>
+                    </tr>
+                    <tr>
+                        <td>انگل‌ها (پریاخته)</td>
+                        <td>(مثال: ائوزینوفیل‌ها, ماست‌سل‌ها)</td>
+                        <td></td>
+                        <td>(مثال: T<sub>H</sub>2)</td>
+                        <td>(مثال: IgE)</td>
+                        <td>(مثال: پوشش آنتی‌ژنی، اندازه بزرگ)</td>
+                        <td>(مثال: فیبروز، واکنش‌های آلرژیک)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <p class="note"><strong>توجه:</strong> جدول بالا یک چارچوب کلی برای تکلیف دانشجویان است و مثال‌های داخل پرانتز صرفاً برای راهنمایی اولیه هستند. جزئیات دقیق‌تر در جلسات قبل بحث شده است.</p>
+
+        <div class="important-exam-topic">
+        <p><strong>سوال آزمون مطرح شده در اسلایدها:</strong> در جریان یک عفونت ویروسی، کدامیک از عوامل ایمنی زیر در کشتن ویروس‌ها موثرتر است؟ الف) PMN (نوتروفیل) ب) MQ (ماکروفاژ) ج) NK (سلول کشنده طبیعی) د) Ab (آنتی‌بادی) ه) هیچکدام. (پاسخ و بحث آن در خلاصه جلسه ۵ آمده است).</p>
+        </div>
+
+        <hr/>
+        <div class="slide-title-box">
+            <h3>بخش B: برخی مکانیسم‌هایی که پاتوژن‌ها توسط آن‌ها از پاسخ ایمنی فرار می‌کنند</h3>
+        </div>
+        <ul>
+            <li><strong>کپسول:</strong> فرار از کمپلمان، فرار از فاگوسیتوز، فرار از پادتن.</li>
+            <li><strong>ریزش آنتی‌ژن (Antigen shedding).</strong></li>
+            <li><strong>تغییرات آنتی‌ژنی (Antigenic variation).</strong></li>
+            <li><strong>استتار آنتی‌ژن‌ها (Antigen Masking/Disguise):</strong> مثال: ترپونما پالیدوم خود را با پروتئین‌های انسانی می‌پوشاند (همچنین استراتژی شیستوزوما).</li>
+            <li><strong>بقای داخل سلولی (Intracellular survival):</strong>
+                <ul class="sub-bullet">
+                    <li>توکسوپلاسما گوندی یک محیط تخصصی درون سلول با وزیکول دارای غشای غیرقابل نفوذ ایجاد می‌کند.</li>
+                    <li>هیستوپلاسما کپسولاتوم به‌صورت داخل سلولی و کریپتوکوکوس نئوفرمنس به‌صورت کپسول‌دار درون بدن میزبان قرار می‌گیرند.</li>
+                </ul>
+            </li>
+            <li><strong>ترشح پروتئازهای شکننده آنتی‌بادی:</strong> مثال: نایسریا گونوره‌آ پروتئاز IgA تولید می‌کند.</li>
+            <li><strong>مهار همجوشی فاگوزوم و لیزوزوم:</strong> مانند مایکوباکتریوم توبرکلوزیس.</li>
+            <li><strong>فرار از فاگوزوم به سیتوزول:</strong> مانند لیستریا مونوسیتوژنز.</li>
+            <li><strong>تولید مواد مضعف و مواد بازدارنده سیستم ایمنی.</strong></li>
+            <li>و غیره.</li>
+            <li>از بین چهار گروه پاتوژن‌ها، <strong>ویروس‌ها</strong> بیشترین تنوع مکانیسم‌ها را برای فرار از دفاع ایمنی تکامل داده‌اند.</li>
+        </ul>
+
+        <div class="diagram-description">
+            <p><strong>عملکرد آنتی‌ژن‌های آزاد پاتوژن‌ها (بر اساس دیاگرام صفحه ۲۹ اسلایدها):</strong></p>
+            <p>آنتی‌ژن‌های محلول و آزاد شده توسط پاتوژن‌ها می‌توانند از طرق مختلف پاسخ ایمنی را مختل کنند:</p>
+            <ol>
+                <li><strong>مسدود کردن آنتی‌بادی (Block antibody):</strong> آنتی‌ژن‌های محلول پلاسمودیوم فالسیپاروم.</li>
+                <li><strong>مسدود کردن سلول‌های اجرایی (Blockade effector cells):</strong> کمپلکس‌های در گردش شیستوزوما مانسونی CTLها را مهار می‌کنند.</li>
+                <li><strong>القاء تحمل در سلول‌های T و B (Induce T and B cell tolerance):</strong> آنتی‌ژن‌های محلول تریپانوزوما بروسی. (منجر به خستگی کلونال، انسداد یا حذف سلول‌ها).</li>
+                <li><strong>القاء فعال‌سازی پلی‌کلونال و انحراف سیستم ایمنی (Induce polyclonal activation - diversion of the immune system):</strong> ویروس EBV برای سلول‌های B (و استاف اورئوس برای سلول‌های T) میتوژنیک است و باعث تولید سطوح بالایی از آنتی‌بادی/سایتوکاین‌های غیراختصاصی می‌شود.</li>
+                <li><strong>مهار پاسخ التهابی (Inhibit the inflammatory response):</strong> بسیاری از پاتوژن‌ها مولکول‌های سرکوبگر ایمنی آزاد می‌کنند (از طریق فعال‌سازی ماکروفاژها یا سلول‌های T سرکوبگر و تولید پروستاگلاندین‌ها، IL-10، TGF-β).</li>
+            </ol>
+        </div>
+
+        <h3>برخی استراتژی‌های دفاعی ویروس‌ها (خلاصه اسلاید ۳۰):</h3>
+        <ul>
+            <li>تصاحب ژن‌های سلولی کدکننده سایتوکاین‌ها یا گیرنده‌های سایتوکاینی (که بیان آن‌ها توسط ویروس می‌تواند پاسخ ایمنی را منحرف کند).</li>
+            <li>سنتز پروتئین‌هایی که تثبیت کمپلمان را مهار می‌کنند.</li>
+            <li>سنتز پروتئین‌هایی که پردازش و ارائه آنتی‌ژن توسط مولکول‌های MHC کلاس I را مهار می‌کنند.</li>
+            <li>و غیره.</li>
+        </ul>
+    <div class="table-responsive-wrapper">
+        <table>
+            <caption>جزئیات استراتژی‌های دفاعی برخی ویروس‌ها (بر اساس جدول صفحه ۳۱ اسلایدها)</caption>
+            <thead>
+                <tr>
+                    <th>استراتژی ویروسی</th>
+                    <th>مکانیسم اختصاصی</th>
+                    <th>نتیجه</th>
+                    <th>مثال‌های ویروسی</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="3">مهار ایمنی هومورال</td>
+                    <td>گیرنده Fc کد شده توسط ویروس</td>
+                    <td>بلوک کردن عملکردهای اجرایی آنتی‌بادی‌های متصل به سلول‌های آلوده</td>
+                    <td>هرپس سیمپلکس، سیتومگالوویروس</td>
+                </tr>
+                <tr>
+                    <td>گیرنده کمپلمان کد شده توسط ویروس</td>
+                    <td>بلوک کردن مسیرهای اجرایی وابسته به کمپلمان</td>
+                    <td>هرپس سیمپلکس</td>
+                </tr>
+                <tr>
+                    <td>پروتئین کنترل کمپلمان کد شده توسط ویروس</td>
+                    <td>مهار فعال‌سازی کمپلمان در سلول آلوده</td>
+                    <td>واکسینیا</td>
+                </tr>
+                <tr>
+                    <td rowspan="3">مهار پاسخ التهابی</td>
+                    <td>همولوگ گیرنده کموکاین کد شده توسط ویروس</td>
+                    <td>حساس کردن سلول‌های آلوده به اثرات برخی کموکاین‌ها</td>
+                    <td>سیتومگالوویروس</td>
+                </tr>
+                <tr>
+                    <td>گیرنده سایتوکاین محلول کد شده توسط ویروس (همولوگ گیرنده IL-1، TNF، IFN-γ)</td>
+                    <td>بلوک کردن اثرات سایتوکاین‌ها</td>
+                    <td>واکسینیا</td>
+                </tr>
+                <tr>
+                    <td>مهار ویروسی بیان مولکول‌های چسبندگی (LFA-3, ICAM-1)</td>
+                    <td>بلوک کردن چسبندگی لنفوسیت‌ها به سلول‌های آلوده</td>
+                    <td>اپشتین-بار ویروس</td>
+                </tr>
+                 <tr>
+                    <td>مهار پاسخ التهابی (ادامه)</td>
+                    <td>محافظت از فعال‌سازی NFκB توسط توالی‌های کوتاه تقلیدکننده TLRs</td>
+                    <td>بلوک کردن پاسخ‌های التهابی</td>
+                    <td>واکسینیا</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">بلوک کردن پردازش و ارائه آنتی‌ژن</td>
+                    <td>مهار افزایش بیان MHC کلاس I توسط IFN-γ</td>
+                    <td>اختلال در شناسایی APC ها توسط T سلول‌های CD4</td>
+                    <td>هرپس سیمپلکس، سیتومگالوویروس</td>
+                </tr>
+                <tr>
+                    <td>مهار انتقال پپتید توسط TAP</td>
+                    <td>بلوک کردن اتصال پپتید با MHC کلاس I</td>
+                    <td>هرپس سیمپلکس</td>
+                </tr>
+                <tr>
+                    <td>سرکوب ایمنی میزبان</td>
+                    <td>همولوگ سایتوکاین IL-10 کد شده توسط ویروس</td>
+                    <td>مهار لنفوسیت‌های T<sub>H</sub>1، کاهش تولید IFN-γ</td>
+                    <td>اپشتین-بار ویروس</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+        <hr/>
+        <div class="slide-title-box">
+            <h3>بخش C: آزارهای ایمنی (Immunopathology) - آسیب‌های ناشی از تعاملات میزبان-میکروب</h3>
+        </div>
+        <p>پاسخ‌های ایمنی ممکن است از طرق زیر به بدن آسیب برسانند:</p>
+        <ul>
+            <li><strong>مشابهت آنتی‌ژنی (Antigenic Mimicry / Cross-reactions):</strong> (مثال: تب روماتیسمی).</li>
+            <li><strong>ابرهادگن‌ها (Superantigens):</strong> (مثال: سندرم شوک توکسیک).</li>
+            <li><strong>آسیب جانبی (Collateral Damage):</strong> آسیب ناخواسته به بافت‌های سالم حین پاسخ به پاتوژن.</li>
+            <li><strong>آلرژی‌ها (Allergies):</strong> به‌ویژه توسط کپک‌ها و کرم‌ها (Helminths).</li>
+            <li><strong>تشکیل کمپلکس ایمنی (Immune Complex - IC formation) و ازدیاد حساسیت نوع III.</strong></li>
+            <li><strong>اختلال در تنظیم سیستم ایمنی (Immune Dysregulation) و تحریک بیش از حد (Hyperstimulation).</strong></li>
+            <li><strong>تشکیل گرانولوما (Granuloma Formation) و آسیب بافتی.</strong> (دیاگرام‌های صفحات ۴۳ و ۴۴ اسلایدها، ساختار گرانولوما با سلول‌های T_DTH، ماکروفاژهای فعال، سلول‌های غول‌آسای چند هسته‌ای، سلول‌های اپیتلیوئید و مرکز کازئوز در سل را نشان می‌دهند).</li>
+            <li><strong>تحریک خودایمنی (Triggering Autoimmunity).</strong></li>
+        </ul>
+        <div class="diagram-description">
+            <p><strong>دیاگرام تعامل سلول T CD4+ و APC (صفحه ۳۹ اسلایدها):</strong></p>
+            <p>این دیاگرام مولکول‌های کلیدی در تعامل و فعال‌سازی سلول T کمکی را نشان می‌دهد:</p>
+            <ul>
+                <li>اتصال TCR (روی سلول T) با کمپلکس پپتید-MHC کلاس II (روی APC).</li>
+                <li>نقش CD4 به‌عنوان کمک‌گیرنده (Coreceptor).</li>
+                <li>سیگنال دوم از طریق مولکول‌های کمک‌تحریکی: CD28 (روی سلول T) با CD80/B7 (روی APC).</li>
+                <li>تعامل CD154/CD40L (روی سلول T فعال) با CD40 (روی APC).</li>
+                <li>مولکول‌های چسبندگی: LFA-1 (روی سلول T) با ICAM-1 (روی APC).</li>
+                <li>CD3: بخشی از کمپلکس TCR برای انتقال سیگنال.</li>
+            </ul>
+        </div>
+        <div class="diagram-description">
+            <p><strong>دیاگرام‌های مربوط به ابرهادگن‌ها (صفحات ۴۰ و ۴۱ اسلایدها):</strong></p>
+            <ul>
+                <li><strong>تحریک سلول T توسط ابرهادگن‌ها:</strong> برخلاف آنتی‌ژن‌های معمولی که در شکاف MHC قرار گرفته و تنها درصد کمی از سلول‌های T اختصاصی را فعال می‌کنند، ابرهادگن‌ها به خارج از شکاف MHC و به بخش متغیر زنجیره بتای TCR متصل شده و درصد بالایی (حدود ۱۰٪) از سلول‌های T را به‌صورت غیراختصاصی فعال می‌کنند.</li>
+                <li><strong>دو نوع اصلی ابرهادگن:</strong>
+                    <ul class="sub-bullet">
+                        <li><strong>اگزوژنوس (Exogenous):</strong> ترشح شده و مانند پلی بین MHC و TCR عمل می‌کند.</li>
+                        <li><strong>اندوژنوس (Endogenous):</strong> بخشی از غشای APC است و به TCR متصل می‌شود.</li>
+                    </ul>
+                هر دو نوع باعث فعال‌سازی سلول T<sub>H</sub> می‌شوند، حتی اگر پپتید ارائه‌شده در MHC برای آن TCR اختصاصی نباشد.
+                </li>
+            </ul>
+            <p class="note"><strong>نکته کلیدی از اسلاید:</strong> ابرپادگن اساساً پادگن نیست، حتی به حضور پادگن دیگری نیز نیازمند نیست، اما یک تنه اثرات چند میلیون پادگن متفاوت را به‌جا می‌گذارد. (اشاره به قضیه آل و چال و دیگر شبه‌خرافات واقعی).</p>
+        </div>
+
+        <hr/>
+        <div class="slide-title-box">
+            <h2>بخش سوم: ایمن‌سازی (Immunization)</h2>
+        </div>
+        <p>ما در دنیایی بالقوه متخاصم و پر از انواع مختلف عوامل عفونی زندگی می‌کنیم.</p>
+        <p>(اسلاید ۵۰ تصویری از یک دانشجوی پرستاری مبتلا به یرقان ناشی از عفونت HBV را نشان می‌دهد که با واکسن قابل پیشگیری است).</p>
+        <h3>تعریف واکسن (مایه):</h3>
+        <p>واژه "واکسن" از کلمه "واکا" (vacca) به معنی گاو گرفته شده است.</p>
+        <ul>
+            <li>یک فرآورده بیولوژیک (مأخوذ از یک میکروب بیماری‌زای مهم یا اجزای آن) است که معمولاً به قصد ایجاد ایمنی پیشگیرانه فعال (Preventive Active Immunization) به‌کار می‌رود (عموماً قبل از برخورد با میکروب وحشی)، به این امید که در صورت هجوم عامل بیماری‌زا، علیه آن محافظت ایجاد کند.</li>
+            <li>یک مجموعه آنتی‌ژنی برگرفته از عوامل مهاجم است که قدرت بیماری‌زایی آن‌ها از بین رفته و معمولاً قبل از مواجهه با آن عامل، به افراد در معرض خطر تجویز می‌شود تا سیستم ایمنی را فعال کرده و با تولید سلول‌های خاطره‌ای B و T مناسب، از ایجاد بیماری بعدی پیشگیری نماید.</li>
+        </ul>
+        <p><strong>مایه‌کوبی یکی از راه‌های ایمن‌سازی است.</strong></p>
+        <div class="note">
+            <p><strong>بررسی نمونه درخواست‌های آزمایشگاهی (اسلایدهای ۵۲-۵۵):</strong> در این اسلایدها، نمونه‌هایی از برگه‌های درخواست آزمایش نشان داده شده و از دانشجویان خواسته شده تا تست‌های مرتبط با ایمونولوژی عفونی را در آن‌ها شناسایی کنند یا نکات جالب توجه در دستورات پزشک را بیابند (مانند درخواست تست‌های وسیع، یا تست‌های خاص برای بیماری‌های عفونی یا ایمونولوژیک).</p>
+        </div>
+
+    <div class="table-responsive-wrapper">
+        <table>
+            <caption>جدول واکسن‌های برنامه‌ی ملی سلامت ایران (با برخی خطاها برای یافتن توسط دانشجویان طبق اسلاید)</caption>
+            <thead>
+                <tr>
+                    <th>نام بیماری</th>
+                    <th>نام عامل بیماری‌زا</th>
+                    <th>نام واکسن (علامت اختصاری)</th>
+                    <th>ماهیت واکسن</th>
+                    <th>نمونه داخلی (تولیدکننده)</th>
+                    <th>آنتی‌سرم تزریقی</th>
+                    <th>مقدار و نحوه تجویز</th>
+                    <th>نوبت تزریق در برنامه سلامت</th>
+                    <th>عوارض واکسن</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>سل</td>
+                    <td>M.tb</td>
+                    <td>BCG (ب.ث.ژ)</td>
+                    <td>Live attenuated</td>
+                    <td>بله، انستیتو رازی</td>
+                    <td>ندارد</td>
+                    <td>۰/۰۵ میلی‌لیتر زیر یک سال، ۰/۱ میلی‌لیتر بالای یک سال، داخل جلدی</td>
+                    <td>بدو تولد</td>
+                    <td>تورم و قرمزی محل تزریق، تورم غدد زیر بغل (در نقص ایمنی)</td>
+                </tr>
+                <tr>
+                    <td>دیفتری (خناق)</td>
+                    <td>C.diphtheria</td>
+                    <td rowspan="3">DTP (سه‌گانه)</td>
+                    <td>Toxoid</td>
+                    <td>بله (کم)، انستیتو رازی</td>
+                    <td>ضد دیفتری</td>
+                    <td rowspan="3">۰/۵ میلی‌لیتر، عضلانی</td>
+                    <td rowspan="3">۲، ۴، ۶ ماهگی و ۱۸ ماهگی، ۴ تا ۶ سالگی</td>
+                    <td rowspan="3">درد در محل تزریق، تورم و قرمزی، تب در کودکان، درد عضلانی و سردرد در بزرگسالان</td>
+                </tr>
+                <tr>
+                    <td>کزاز</td>
+                    <td>C.tetani</td>
+                    <td>Toxoid</td>
+                    <td>بله (کم)، انستیتو رازی, Tetabulin</td>
+                    <td>ضد کزاز</td>
+                </tr>
+                <tr>
+                    <td>سیاه‌سرفه</td>
+                    <td>B.pertussis</td>
+                    <td>Whole killed</td>
+                    <td>بله (کم)، انستیتو رازی</td>
+                    <td>ندارد</td>
+                </tr>
+                <tr>
+                    <td>(سیاه‌سرفه بدون سلول)</td>
+                    <td>B.pertussis</td>
+                    <td>DTaP</td>
+                    <td>Extracted protein (Acellular)</td>
+                    <td>خیر</td>
+                    <td>ندارد</td>
+                    <td>۰/۵ میلی‌لیتر، عضلانی</td>
+                    <td>(مشابه DTP)</td>
+                    <td>(عوارض کمتر از DTP)</td>
+                </tr>
+                <tr>
+                    <td>مننژیت هموفیلوسی</td>
+                    <td>H.influenza type b</td>
+                    <td>HIB</td>
+                    <td>Polysaccharide capsule</td>
+                    <td>بله، انستیتو رازی</td>
+                    <td>ندارد</td>
+                    <td>۰/۵ میلی‌لیتر، عضلانی</td>
+                    <td>(قبلاً با پنتاوالان در ۲،۴،۶ ماهگی)</td>
+                    <td>التهاب در موضع، بی‌اشتهایی، خواب‌آلودگی، تب و قرمزی</td>
+                </tr>
+                <tr>
+                    <td>هپاتیت ب</td>
+                    <td>HBV</td>
+                    <td>Hep.B</td>
+                    <td>Recombinant subunit (HBsAg)</td>
+                    <td>بله، انستیتو پاستور</td>
+                    <td>H.B.Ig</td>
+                    <td>۰/۵ میلی‌لیتر، عضلانی</td>
+                    <td>بدو تولد، (۱)، ۲، (۴)، ۶ ماهگی</td>
+                    <td>درد و قرمزی در ناحیه بازو</td>
+                </tr>
+                <tr>
+                    <td>سرخک (Rubeola)</td>
+                    <td>Morbillivirus</td>
+                    <td rowspan="3">MMR (سرخک، اوریون، سرخجه)</td>
+                    <td>Live attenuated</td>
+                    <td>بله (کم)، انستیتو رازی</td>
+                    <td>دارد</td>
+                    <td rowspan="3">۰/۵ میلی‌لیتر، زیر جلدی</td>
+                    <td rowspan="3">۱۲ ماهگی و ۱۸ ماهگی</td>
+                    <td rowspan="3">عوارض ملایم: راش، تب، لنفادنوپاتی، تهوع، گیجی. عوارض شدید (نادر): تشنج ناشی از تب، پورپورای ترومبوسیتوپنیک ایدیوپاتیک.</td>
+                </tr>
+                <tr>
+                    <td>اوریون (Mumps)</td>
+                    <td>Rubulavirus</td>
+                    <td>Live attenuated</td>
+                    <td>بله (کم)، انستیتو رازی</td>
+                    <td>ندارد</td>
+                </tr>
+                <tr>
+                    <td>سرخجه (German Measles)</td>
+                    <td>Rubella virus</td>
+                    <td>Live attenuated</td>
+                    <td>بله (کم)، انستیتو رازی</td>
+                    <td>ندارد</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">فلج اطفال</td>
+                    <td rowspan="2">Poliovirus</td>
+                    <td>OPV (پولیو خوراکی)</td>
+                    <td>Live attenuated</td>
+                    <td>بله، انستیتو رازی</td>
+                    <td>ندارد</td>
+                    <td>۲ قطره خوراکی</td>
+                    <td>بدو تولد، ۲، ۴، ۶، ۱۸ ماهگی، ۴-۶ سالگی</td>
+                    <td rowspan="2">تب پایین، درد مفاصل، بدن‌درد، تهوع، گیجی. (OPV: فلج ناشی از واکسن بسیار نادر)</td>
+                </tr>
+                <tr>
+                    <td>IPV (پولیو تزریقی)</td>
+                    <td>Killed vaccine</td>
+                    <td>خیر (وارداتی یا تولید محدود)</td>
+                    <td>ندارد</td>
+                    <td>۰/۵ میلی‌لیتر، عضلانی یا زیرجلدی</td>
+                    <td>(در ۴ و ۶ ماهگی همراه با OPV)</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <p class="note"><strong>توجه:</strong> جدول فوق بر اساس اسلاید ارائه شده و ممکن است شامل خطاهایی باشد که دانشجویان باید آنها را پیدا کنند (طبق دستور استاد در اسلاید).</p>
+
+        <h3>تقسیم‌بندی انواع اقدامات/اتفاقات ایمنی‌بخش (Immunization):</h3>
+        <ul>
+            <li><strong>الف) از نظر نحوه پیدایش مصونیت:</strong>
+                <ul class="sub-bullet">
+                    <li>تعمدی (مصنوعی/خواسته) یا اتفاقی (طبیعی/ناخواسته)؟</li>
+                </ul>
+            </li>
+            <li><strong>ب) از نظر ماهیت مصونیت ایجاد شده:</strong>
+                <ul class="sub-bullet">
+                    <li>فعالانه (Active) یا منفعلانه (Passive)؟ (پایدار/گذرا؟ به‌دنبال تحویل محرک یا تحویل محصول؟)</li>
+                </ul>
+            </li>
+        </ul>
+        <div class="diagram-description">
+            <p><strong>شجره‌نامه انواع ایمنی (اسلاید ۵۸):</strong></p>
+            <p>ایمنی (Immunity) به دو دسته اصلی تقسیم می‌شود: ذاتی (Innate/inborn) و اکتسابی (Acquired). ایمنی اکتسابی خود به دو نوع فعال (Active - تولید آنتی‌بادی توسط خود فرد) و غیرفعال (Passive - دریافت آنتی‌بادی‌های آماده) تقسیم می‌شود. هر یک از اینها نیز می‌توانند طبیعی یا مصنوعی باشند:</p>
+            <ul>
+                <li><strong>ایمنی فعال طبیعی:</strong> مواجهه طبیعی با عوامل عفونی.</li>
+                <li><strong>ایمنی فعال مصنوعی:</strong> ایمن‌سازی با واکسن (Artificial immunization).</li>
+                <li><strong>ایمنی غیرفعال طبیعی:</strong> آنتی‌بادی‌های مادری (انتقال از جفت یا شیر).</li>
+                <li><strong>ایمنی غیرفعال مصنوعی:</strong> آنتی‌بادی‌های از منابع دیگر (سرم‌درمانی).</li>
+            </ul>
+             <p><strong>دیاگرام طبقه‌بندی ایمن‌سازی (اسلاید ۵۹):</strong></p>
+             <p>ایمن‌سازی (Immunization) می‌تواند <strong>تعمدی (Intentional/Artificial)</strong> یا <strong>ناخواسته (Accidental/Natural)</strong> باشد.</p>
+             <ul>
+                 <li><strong>ایمن‌سازی فعال (Active):</strong> پایدار است (به‌دلیل حافظه ایمونولوژیک).
+                     <ul class="sub-bullet">
+                         <li><strong>تعمدی:</strong> مایه‌کوبی (واکسیناسیون)، برخورددهی (challenge).</li>
+                         <li><strong>ناخواسته:</strong> ابتلا به بیماری (واگیر/غیرکشنده).</li>
+                     </ul>
+                 </li>
+                 <li><strong>ایمن‌سازی غیرفعال (Passive):</strong> گذرا است (چون محصول آماده تحویل داده می‌شود).
+                     <ul class="sub-bullet">
+                         <li><strong>تعمدی:</strong> سروتراپی و ایمونوپروفیلاکسی.</li>
+                         <li><strong>ناخواسته:</strong> انتقال از مادر به فرزند (جنین/نوزاد شیرخوار)، انتقال از کیسه خون.</li>
+                     </ul>
+                 </li>
+             </ul>
+        </div>
+
+        <div class="important-exam-topic">
+            <h3>تعاریف مهم در ایمونولوژی عفونی و ایمن‌سازی:</h3>
+            <p>دانشجویان باید تعاریف زیر را بدانند:</p>
+            <ul>
+                <li>Vaccine (واکسن)</li>
+                <li>Infection vs Infectious Disease (عفونت در مقابل بیماری عفونی)</li>
+                <li>Serum (pl. sera) (سرم، جمع: سرا)</li>
+                <li>ISG (Immune Serum Globulin), HIG (Hyperimmune Globulin) & IVIG (Intravenous Immunoglobulin)</li>
+                <li>Heterologous vs Homologous sera (سرم هترولوگ در مقابل هومولوگ)</li>
+                <li>Pre- / Post-Exposure (قبل از مواجهه / پس از مواجهه)</li>
+                <li>Preventive / Therapeutic (پیشگیرانه / درمانی)</li>
+                <li>Adoptive Transfer of cells (انتقال سلول به‌صورت پذیرنده)</li>
+                <li>Mass immunization (ایمن‌سازی همگانی)</li>
+                <li>Herd immunity (ایمنی گله‌ای)</li>
+                <li>Passive vaccination (واکسیناسیون غیرفعال – همان سروتراپی)</li>
+                <li>Premunition (non-sterile / concomitant immunity) (ایمنی نسبی در حضور عامل عفونی)</li>
+                <li>Adjuvants & Immune Potentiators (ادجوانت‌ها و تقویت‌کننده‌های ایمنی)</li>
+                <li>Conjugated vaccines (واکسن‌های کنژوگه)</li>
+                <li>Seroconversion (تبدیل سرمی)</li>
+                <li>Serofastness, Seroreversion, Serorelapse, Seroresistance (پایداری سرمی، بازگشت منفی سرمی، عود سرمی، مقاومت سرمی)</li>
+            </ul>
+        </div>
+
+        <h3>اصطلاحات توصیفی برای عفونت و علائم آن (اسلاید ۶۲):</h3>
+        <ul>
+            <li><strong>از نظر شدت و هیاهو:</strong> superacute, acute, subacute, chronic, superchronic, etc.</li>
+            <li><strong>از نظر بیان زمان وقوع:</strong> Current, Recent, Past, Old, Remote, Prior infection, Primary infection, etc.</li>
+            <li><strong>از نظر تداوم و تجمیع:</strong> Persistent, Transient, Carrier state, superinfection, co-infection, mixed, etc.</li>
+            <li><strong>از نظر نحوه پیشرفت:</strong> Insidious, Underlying, Apparent, masked, Undulant or Undulated, Remittent, Intermittent, Wax & Wane, fluctuating, recurrent, etc.</li>
+            <li><strong>از نظر بازگشت علائم:</strong> Relapse, reactivation, re-infection, recrudescence, superinfection, etc.</li>
+            <li><strong>از نظر حضور علائم یا گسترش ضایعه:</strong> Symptomatic vs. Asymptomatic, silent, subclinical, localized, disseminated, full-blown, active, resolved, recovered, inapparent, latent, indolent, dormant, quiescent, vertical, etc.</li>
+            <li><strong>از نظر حدوث و بقای نشانه‌های سرولوژیک:</strong> Seroconversion; Serofast(ness), Seroreversion, Serorelapse, seroresistance, etc.</li>
+        </ul>
+        <p>(اسلاید ۶۱ تصویری از انتشار ویروس آنفولانزا را نشان می‌دهد).</p>
+        <p>(اسلاید ۶۳ مجدداً طبقه‌بندی انواع واکسن‌ها را مرور می‌کند که قبلاً در خلاصه جلسه ۵ به تفصیل آمده است).</p>
+    <div class="table-responsive-wrapper">
+        <table>
+            <caption>برنامه ملی ایمن‌سازی کودکان طبق پروتکل جمهوری اسلامی ایران (نمونه دیگر از اسلاید ۶۴)</caption>
+            <thead>
+                <tr>
+                    <th>سن</th>
+                    <th>نوع واکسن</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>بدو تولد</td>
+                    <td>ب. ث. ژ - هپاتیت ب - فلج اطفال خوراکی</td>
+                </tr>
+                <tr>
+                    <td>۲ ماهگی</td>
+                    <td>پنج‌گانه – فلج اطفال خوراکی</td>
+                </tr>
+                <tr>
+                    <td>۴ ماهگی</td>
+                    <td>پنج‌گانه - فلج اطفال خوراکی و فلج اطفال تزریقی</td>
+                </tr>
+                <tr>
+                    <td>۶ ماهگی</td>
+                    <td>پنج‌گانه - فلج اطفال خوراکی</td>
+                </tr>
+                <tr>
+                    <td>۱۲ ماهگی</td>
+                    <td>MMR</td>
+                </tr>
+                <tr>
+                    <td>۱۸ ماهگی</td>
+                    <td>سه‌گانه – فلج اطفال خوراکی - MMR</td>
+                </tr>
+                <tr>
+                    <td>۶ سالگی</td>
+                    <td>سه‌گانه – فلج اطفال خوراکی</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+        <p>(اسلاید ۶۵ تصویری با عنوان "مایه‌کوبی یکی از راه‌های ایمن‌سازی است" را جهت نقد دانشجویان نشان می‌دهد).</p>
+        <p>(اسلایدهای ۶۶-۶۸ برنامه‌های واکسیناسیون هند و آمریکا را از منابع دیگر نمایش می‌دهند که قبلاً در خلاصه جلسه ۵ به آنها پرداخته شد).</p>
+        <p>(اسلایدهای ۶۹ و ۷۰ مجدداً ویژگی‌های واکسن ایده‌آل، مواد جانبی و مزایا و معایب واکسن‌های زنده را مرور می‌کنند).</p>
+
+        <h3>انواع تقسیم‌بندی آنتی‌سرم‌ها (و فرآورده‌های بیولوژیک دیگر):</h3>
+        <p>اسامی مختلف آنتی‌سرم: IG (ایمونوگلوبولین)، IS (ایمیون سرم)، HIS (هایپرایمیون سرم)، IVIG (ایمونوگلوبولین وریدی) و غیره.</p>
+        <ul>
+            <li><strong>بر اساس کاربرد:</strong> تشخیصی؟ درمانی؟ پیشگیرانه؟</li>
+            <li><strong>بر اساس منبع:</strong> انسانی یا حیوانی؟</li>
+            <li><strong>بر اساس هدف:</strong> ضد میکروب؟ ضد زهر مار؟ ضد سم میکروب؟ ضد سطح میکروب؟</li>
+            <li><strong>بر اساس اختصاصیت:</strong> اختصاصی یا عمومی؟ تک‌بنیادی (مونوکلونال) یا چنددودمانی (پلی‌کلونال)؟</li>
+            <li><strong>بر اساس ساختار:</strong> یکپارچه یا شکسته‌شده (مثلاً Fab یا F(ab')2)؟</li>
+            <li><strong>بر اساس قدرت:</strong> سرم ایمن یا فوق ایمن (Hyperimmune)؟</li>
+        </ul>
+        <h4>شرایط کاربرد آنتی‌سرم‌ها:</h4>
+        <ul>
+            <li>مؤثر بودن ایمنی هومورال علیه میکروب.</li>
+            <li>نیاز به سرعت عمل علیه میکروب.</li>
+            <li>مؤثر نبودن سایر اقدامات درمانی.</li>
+        </ul>
+        <h4>عوارض کاربرد آنتی‌سرم‌ها:</h4>
+        <ul>
+            <li>شوک آنافیلاکسی (آلرژی تیپ ۱).</li>
+            <li>آرتریت و نفریت (آلرژی تیپ ۳ - بیماری سرم).</li>
+            <li>غیره.</li>
+        </ul>
+        <h4>دیگر فرآورده‌های زیستی مورد استفاده در ایمونوتراپی:</h4>
+        <ul>
+            <li>سایتوکاین‌ها (IFN، CSFها و ...)</li>
+            <li>آنتی‌سایتوکاین‌ها</li>
+            <li>آنتی‌بادی‌های مونوکلونال نوین (Novel mAbs)</li>
+            <li>پروتئین‌های فیوژن (Fugen Proteins)</li>
+        </ul>
+        <div class="diagram-description">
+            <p><strong>نمودارهای تکمیلی (اسلایدهای ۷۴-۷۸):</strong></p>
+            <ul>
+                <li><strong>پاسخ ایمنی اولیه و ثانویه (اسلاید ۷۴):</strong> نمایش تیتر آنتی‌بادی در طول زمان پس از اولین مواجهه با آنتی‌ژن A (بیماری رخ می‌دهد) و دومین مواجهه (پاسخ ثانویه سریع‌تر و قوی‌تر، بیماری رخ نمی‌دهد). مشابه برای آنتی‌ژن B.</li>
+                <li><strong>غلظت سرمی ایمونوگلوبولین‌ها در طول تکامل انسان (اسلاید ۷۵):</strong> نمایش سطح IgG مادری، IgG نوزاد، IgM و IgA از بدو تولد تا ۱۴ سالگی. IgG مادری در بدو تولد بالاست و سپس کاهش می‌یابد، در حالی که تولید IgG، IgM و IgA توسط خود نوزاد به‌تدریج افزایش می‌یابد.</li>
+                <li><strong>تولید آنتی‌بادی در ابتدا (اسلاید ۷۶):</strong> جنین قادر به سنتز IgM از حدود ۶ ماهگی بارداری است (حدود ۱۰٪ سطح بزرگسال در بدو تولد). IgG از حدود ماه دوم بارداری در جنین قابل تشخیص است اما عمدتاً منشأ مادری دارد و در بدو تولد سطح آن کمی از مادر بیشتر است. شیردهی به حفظ سطح برخی آنتی‌بادی‌های مادری و تأمین IgA کمک می‌کند.</li>
+                <li><strong>پاسخ به آنتی‌ژن‌های پلی‌ساکاریدی (اسلاید ۷۷):</strong> کودکان زیر ۲ سال عموماً پاسخ آنتی‌بادی مناسبی به واکسن‌های پلی‌ساکاریدی کپسولی باکتری‌ها (مانند هموفیلوس آنفلوآنزا نوع b، نایسریا مننژیتیدیس، استرپتوکوک پنومونیه) نمی‌دهند، زیرا به آنتی‌ژن‌های غیروابسته به T (T-independent) خوب پاسخ نمی‌دهند. اتصال شیمیایی (کنژوگاسیون) پلی‌ساکارید به آنتی‌ژن‌های وابسته به T (مانند توکسوئید دیفتری) ایمنی‌زایی را بهبود می‌بخشد. سالمندان مستعد پنومونی شدید هستند و واکسن پنوموکوکی (حتی نوع پلی‌ساکاریدی ساده PPSV مانند پنوموواکس ۲۳) توصیه می‌شود، اما در اطفال زیر ۲ سال بهتر است نوع کنژوگه (PCV) داده شود.</li>
+                <li><strong>غلظت سرمی آنتی‌توکسین IgG انسانی و اسبی پس از تجویز به انسان (اسلاید ۷۷):</strong> IgG اسبی سریع‌تر از IgG انسانی از بدن پاک می‌شود.</li>
+                <li><strong>سرنوشت IgG انسانی و اسبی پس از تجویز به انسان (اسلاید ۷۸):</strong> نمایش مراحل رقت، کاتابولیسم و حذف ایمنی (Immune elimination به‌دلیل تشکیل کمپلکس آنتی‌ژن-آنتی‌بادی برای IgG اسبی).</li>
+            </ul>
+        </div>
+        <div class="diagram-description">
+            <p><strong>کاهش ایمنی‌زایی (بیگانگی) آنتی‌بادی‌های مونوکلونال (اسلاید ۸۱):</strong></p>
+            <p>برای کاهش واکنش ایمنی میزبان به آنتی‌بادی‌های مونوکلونال تولید شده در موش (Murine)، از روش‌های زیر استفاده می‌شود:</p>
+            <ol>
+                <li><strong>آنتی‌بادی موشی (Murine mAb):</strong> ۱۰۰٪ غیرخودی (مثال: Ibritumomab).</li>
+                <li><strong>آنتی‌بادی کایمریک (Chimeric mAb):</strong> حدود ۳۰٪ غیرخودی در ناحیه متغیر (V region) (مثال: Infliximab).</li>
+                <li><strong>آنتی‌بادی انسانی‌شده (Humanized mAb):</strong> بیشتر انسانی، با کمتر از ۱۰٪ توالی بیگانه در نواحی CDR (مثال: Palivizumab).</li>
+                <li><strong>آنتی‌بادی انسانی (Human mAb):</strong> کاملاً از ژن‌های انسانی نوترکیب ساخته شده (مثال: Ipilimumab).</li>
+            </ol>
+            <p>(اسلایدهای ۸۲ و ۸۳ لیست بلندبالایی از آنتی‌بادی‌های مونوکلونال درمانی مورد تایید تا سال ۲۰۰۴، با ذکر نام تجاری، موارد مصرف، اختصاصیت، ماهیت، سازنده و تاریخ تایید را نشان می‌دهند).</p>
+        </div>
+        <div class="diagram-description">
+            <p><strong>آنتی‌بادی‌های دو اختصاصی (Bispecific Antibodies) (اسلاید ۸۴):</strong></p>
+            <p>این آنتی‌بادی‌ها دارای دو جایگاه اتصال به آنتی‌ژن متفاوت هستند و می‌توانند برای اهداف مختلفی طراحی شوند، مانند:</p>
+            <ul>
+                <li>اتصال همزمان به یک توکسین و یک سلول هدف برای تحویل هدفمند توکسین.</li>
+                <li>اتصال همزمان به یک سلول T سایتوتوکسیک (مثلاً از طریق CD3 روی سلول T) و یک سلول هدف (مثلاً سلول سرطانی) برای هدایت سلول T به سمت سلول هدف و کشتن آن.</li>
+            </ul>
+        </div>
+
+        <hr/>
+        <h2>تفسیر تست‌های سرولوژیک در تشخیص بیماری‌های عفونی (اسلایدهای ۸۶-۸۸)</h2>
+        <h3>ملاحظات مهم در تفسیر نتایج:</h3>
+        <ul>
+            <li>وضعیت سیستم ایمنی بیمار (Intact Immune System?)</li>
+            <li>سن بیمار (Age?)</li>
+            <li>آیا بیمار پاسخ‌دهنده (Responder) است؟</li>
+            <li>زمان نمونه‌گیری (Time of Sampling?)</li>
+            <li>تبدیل سرمی (Seroconversion) در مقابل افزایش تیتر (Rising Titer)</li>
+            <li>سابقه مواجهه قبلی (Previous Exposure?)</li>
+            <li>شغل بیمار (Job?)</li>
+            <li>سابقه واکسیناسیون (Vaccination Hx?)</li>
+            <li>شباهت آنتی‌ژنی و واکنش‌های متقاطع (Antigenic mimicry & Cross Reactions)</li>
+            <li>سایر شرایط اپیدمیولوژیک (Other Epidemiologic Conditions)</li>
+            <li>مصرف هرگونه دارو (Any Drug?)</li>
+        </ul>
+        <h3>نکاتی در مورد تشخیص ایمونولوژیک برخی عفونت‌های مهم پزشکی:</h3>
+        <ul>
+            <li>جستجو برای آنتی‌ژن (Ag) یا آنتی‌بادی (Ab) (تشخیص عامل در مقابل واکنش ایمنی).</li>
+            <li><strong>در مورد آنتی‌بادی:</strong> ساختار، افینیتی و آویدیتی، اختصاصیت، کلاس آنتی‌بادی (مثلاً روش capture برای IgM)، IgM هتروتیپیک، آنتی‌بادی مونوکلونال در مقابل آنتی‌سرم (مورد استفاده در کیت آزمایشگاهی)، منبع آنتی‌بادی.</li>
+            <li><strong>در مورد آنتی‌ژن:</strong> نوع آنتی‌ژن مورد استفاده در طراحی تست، ساختار و کنفورماسیون آنتی‌ژن، واکنش متقاطع.</li>
+            <li>و بسیاری عوامل دیگر مانند جهش‌های آنتی‌ژنی.</li>
+        </ul>
+        <h3>چالش‌ها در نتایج تست‌های ایمونوسرولوژی:</h3>
+        <ul>
+            <li><strong>نتیجه غیرواکنشی (Non Reactive)؟</strong>
+                <ul class="sub-bullet">
+                    <li><strong>صحیح (True):</strong> با در نظر گرفتن حساسیت تست (مثلاً ۹۴٪).</li>
+                    <li><strong>منفی کاذب (False Negative)؟</strong>
+                        <ul>
+                            <li>عفونت را رد نمی‌کند.</li>
+                            <li>منفی در روزهای اولیه عفونت.</li>
+                            <li>در نقص ایمنی.</li>
+                            <li>جهش احتمالی در عامل عفونی.</li>
+                            <li>بیمار غیرپاسخ‌دهنده (Non Responder).</li>
+                        </ul>
+                    </li>
+                    <li>یافته‌های تکمیلی؟ سابقه تماس؟ تست‌های CMI؟</li>
+                </ul>
+            </li>
+            <li><strong>نتیجه واکنشی (Reactive)؟</strong>
+                <ul class="sub-bullet">
+                    <li><strong>صحیح (True):</strong> با در نظر گرفتن اختصاصیت تست (مثلاً ۹۸٪).
+                        <ul>
+                            <li>عفونت فعلی (به‌عنوان تست کمکی).</li>
+                            <li>سابقه مواجهه.</li>
+                            <li>بررسی سرواپیدمیولوژی.</li>
+                            <li>وضعیت ایمنی؟ (مثلاً پلاسمای دوران نقاهت مناسب).</li>
+                        </ul>
+                    </li>
+                    <li><strong>مثبت کاذب (False Positive)؟</strong>
+                        <ul>
+                            <li>واکنش متقاطع (مثلاً با ویروس کرونا).</li>
+                        </ul>
+                    </li>
+                    <li>تکرار برای بررسی افزایش تیتر یا سروکانورژن.</li>
+                    <li>یافته‌های تکمیلی؟ IgM در مقابل IgG یا IgA؟</li>
+                </ul>
+            </li>
+        </ul>
+
+        <hr>
+        <p class="final-salutation">از توجه شما متشکرم.<br> اللَّهُمَّ غَيْرَ سُوء حالنا بحسن حالك.</p>
+        <div class="nav-container">
+            <button class="nav-button" onclick="window.location.href='6.html'">جلسه قبل</button>
+            <button class="nav-button" onclick="window.location.href='index.html'">بازگشت به جلسه 1</button>
+        </div>
+        <p class="final-salutation">جمع اورنده: مهدی رضایی</p>
+    </div>
+</body>
+</html>
